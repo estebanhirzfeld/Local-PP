@@ -1,0 +1,116 @@
+$primario:#998bb3;
+$secundario:#a2b2e2;
+$terciario:#bfa2b5;
+
+$primarioDark:#736a86;
+$secundarioDark:#474452;
+$terciarioDark:#917d8a;
+
+
+$colorCaja:white;
+
+.colorBoton1{background:#dfdede; }
+
+.colorBoton2{
+    background:#c2c2c2; border:1px solid #c2c2c2; }
+
+.negrita{
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    background-image: url("/assets/img/doodle.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $secundario;
+}
+
+.div__nav--estilo{
+    background-image: url("/assets/img/doodle.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $primario;
+    box-shadow: 0px 8px 6px rgba(54, 54, 80, 0.4);
+    border-radius: 0px 0px 30px 30px;
+}
+
+.cajon__placeholder--estilo{
+    font-size: 100%-20%;
+    font-weight: bold;
+    color:#707070;
+}
+    
+
+.footer--estilo{
+
+    background-image: url("/assets/img/doodle.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $terciario;
+    box-shadow: 0px 8px 6px rgba(54, 54, 80, 0.4); 
+}
+
+
+.footer--estilo {
+        div div ul li{
+        list-style: none;
+    }
+}
+
+// Explorar Page
+
+/*----Tablas -----*/
+.table__explorar--estilo{
+    border-collapse: collapse;
+    table-layout: fixed;
+
+    background-image: url("/assets/img/doodle.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-color: #998bb3;
+    box-shadow: 0px 8px 6px rgba(54, 54, 80, 0.4);
+    
+    margin-top:10px;
+    margin-bottom:10px;
+    border-radius: 15px;
+    text-align:center;
+}
+
+/*----Link Colores-----*/
+
+a:link {
+    /*Link Sin Visitar*/
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    /*Link Visitado*/
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    /*Mouse por Encima (Sombra)*/
+    text-decoration: none;
+    text-shadow: 0px 0px 10px;
+    color: black;
+}
+
+a:active {
+    /*Al Hacer Click*/
+    text-decoration: none;
+    color: purple;
+}
+

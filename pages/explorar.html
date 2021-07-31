@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet "href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!-- Nuestro CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Explorar - LocalPP</title>
+</head>
+
+<body >
+
+    <div class="container-fluid div__nav--estilo">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="../index.html">localPP</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="../pages/explorar.html">🔍Explorar </a></li>
+                    <li class="nav-item active"><a class="nav-link" href="../pages/mis-ofertas.html">Mis Ofertas(1) </a></li>
+                    <li class="nav-item active"><a class="nav-link" href="../pages/mis-intercambios.html">Mis
+                            Intercambios(15)</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="">Cartera (ARS$10.000) </a></li>
+                    <li class="nav-item active semi-negrita"><a class="nav-link" href="">🔔estebanhirzfeld </a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-xs-12 rojo">
+
+                <div class="div__explorador--estilo animate__bounceIn">
+                    <div>
+                        <form>
+                            <input type="radio" name="comprarVender" value="comprar">
+                            <label> Comprar </label>
+                            <input type="radio" name="comprarVender" value="vender">
+                            <label> Vender </label>
+                        </form>
+                    </div>
+
+                    <div class="div__Selector--estilo">
+                        <legend>Saldo</legend>
+                        <select class="form-select form-select-lg mb-3 selectDer" aria-label=".form-select-lg example">
+                            <option value="1">Paypal</option>
+                        </select>
+                    </div>
+
+                    <div class="div__Selector--estilo">
+                        <legend>Ubicacion</legend>
+                        <select class="form-select form-select-lg mb-3 selectDer" aria-label=".form-select-lg example">
+                            <option value="1">Zona Norte</option>
+                            <option value="2">Zona Sur</option>
+                            <option value="3">Zona Oeste</option>
+                        </select>
+                    </div>
+
+                    <div class="div__Selector--estilo">
+                        <legend>Metodo de Pago</legend>
+                        <select class="form-select form-select-lg mb-3 selectDer" aria-label=".form-select-lg example">
+                            <option value="1">Uala          </option>
+                            <option value="2">bruBank       </option>
+                            <option value="3">Transferencia </option>
+                            <option value="4">MercadoPago   </option>
+                            <option value="5">CuentaDigital </option>
+
+                            
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-9 col-xs-12 verde">
+                <div class="row seccion2 div__filtros--estilo">
+                    <div id="mejoresVendedores">
+                        <h2>Mejores Vendedores 👑</h2>
+                    </div>
+
+                    <div>
+                        <form action="">
+                            <fieldset>
+                                <label for="mejor">Mejor valorado</label>
+                                <input type="checkbox" name="mejor_valorado">
+                                <label for="linea">Ahora en linea</label>
+                                <input type="checkbox" name="ahora_linea">
+
+                                <select name="porTipo">
+                                    <option value=popularidad> Popularidad </option>
+                                    <option value=mejorPrecio> Mejor Precio </option>
+                                </select>
+                            </fieldset>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="seccion3">
+                    <section id="seccion2Explorar">
+
+                        <table class="table--1" width="100%">
+                            <thead>
+                                <tr>
+                                    <th rowspan="3">burberry</th>
+                                    <th rowspan="3">Método</th>
+                                    <th rowspan="3">Argentina</th>
+                                    <th rowspan="2">ARS$58.500</th>
+                                </tr>
+                                <tr>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">30% por debajo del Mercado</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="3">~375 trades</td>
+                                    <td rowspan="3">bruBannk</td>
+                                    <td rowspan="3">Zona Norte</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">
+                                        <form action="">
+                                            <!--  Boton Comprar -->
+                                            <input type="submit" value="Comprar" />
+                                        </form>
+                                    </td>
+                                </tr>
+                                <tr>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="table--2" width="100%">
+                            <thead>
+                                <tr>
+                                    <th rowspan="3">orangejuice</th>
+                                    <th rowspan="3">Método</th>
+                                    <th rowspan="3">Argentina</th>
+                                    <th rowspan="2">ARS$22.000</th>
+                                </tr>
+                                <tr>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">15% por debajo del Mercado</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="3">~2100 trades</td>
+                                    <td rowspan="3">Ualá</td>
+                                    <td rowspan="3">Zona Sur</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">
+                                        <form action="">
+                                            <!--  Boton Comprar -->
+                                            <input type="submit" value="Comprar" />
+                                        </form>
+                                    </td>
+                                </tr>
+                                <tr>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+
+                </div>
+                <div class="seccion4">
+
+                    <h2>Ofertas Similares</h2> <br>
+
+                </div>
+                <div class="seccion5">
+
+                    <section id="seccion3Explorar">
+
+                        <table class="table--3" width="100%">
+                            <thead>
+                                <tr>
+                                    <th rowspan="3">flycoffee</th>
+                                    <th rowspan="3">Método</th>
+                                    <th rowspan="3">Argentina</th>
+                                    <th rowspan="2">ARS$33.200</th>
+                                </tr>
+                                <tr>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">10% por debajo del Mercado</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="3">~8700 trades</td>
+                                    <td rowspan="3">Ualá</td>
+                                    <td rowspan="3">Zona Norte</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">
+                                        <form action="">
+                                            <!--  Boton Comprar -->
+                                            <input type="submit" value="Comprar" />
+                                        </form>
+                                    </td>
+                                </tr>
+                                <tr>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="table--4" width="100%">
+                            <thead>
+                                <tr>
+                                    <th rowspan="3">Clarinet</th>
+                                    <th rowspan="3">Método</th>
+                                    <th rowspan="3">Argentina</th>
+                                    <th rowspan="2">ARS$60.500</th>
+                                </tr>
+                                <tr>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">10% por debajo del Mercado</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="3">~400 trades</td>
+                                    <td rowspan="3">Transf. Bancaria</td>
+                                    <td rowspan="3">Zona Norte</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">
+                                        <form action="">
+                                            <!--  Boton Comprar -->
+                                            <input type="submit" value="Comprar" />
+                                        </form>
+                                    </td>
+                                </tr>
+                                <tr>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="table--5" width="100%">
+                            <thead>
+                                <tr>
+                                    <th rowspan="3">Milkyway1</th>
+                                    <th rowspan="3">Método</th>
+                                    <th rowspan="3">Argentina</th>
+                                    <th rowspan="2">ARS$31.700</th>
+                                </tr>
+                                <tr>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">8% por debajo del Mercado</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="3">~3500 trades</td>
+                                    <td rowspan="3">Transf. Bancaria</td>
+                                    <td rowspan="3">Zona Oeste</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">
+                                        <form action="">
+                                            <!--  Boton Comprar -->
+                                            <input type="submit" value="Comprar" />
+                                        </form>
+                                    </td>
+                                </tr>
+                                <tr>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="table--6" width="100%">
+                            <thead>
+                                <tr>
+                                    <th rowspan="3">highmoon</th>
+                                    <th rowspan="3">Método</th>
+                                    <th rowspan="3">Argentina</th>
+                                    <th rowspan="2">ARS$11.100</th>
+                                </tr>
+                                <tr>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">11% por debajo del Mercado</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="3">~1900 trades</td>
+                                    <td rowspan="3">MercadoPago</td>
+                                    <td rowspan="3">Zona Norte</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">
+                                        <form action="">
+                                            <!--  Boton Comprar -->
+                                            <input type="submit" value="Comprar" />
+                                        </form>
+                                    </td>
+                                </tr>
+                                <tr>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="table--7" width="100%">
+                            <thead>
+                                <tr>
+                                    <th rowspan="3">burberry</th>
+                                    <th rowspan="3">Método</th>
+                                    <th rowspan="3">Argentina</th>
+                                    <th rowspan="2">ARS$58.500</th>
+                                </tr>
+                                <tr>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">30% por debajo del Mercado</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="3">~375 trades</td>
+                                    <td rowspan="3">bruBannk</td>
+                                    <td rowspan="3">Zona Norte</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">
+                                        <form action="">
+                                            <!--  Boton Comprar -->
+                                            <input type="submit" value="Comprar" />
+                                        </form>
+                                    </td>
+                                </tr>
+                                <tr>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="table--8" width="100%">
+                            <thead>
+                                <tr>
+                                    <th rowspan="3">burberry</th>
+                                    <th rowspan="3">Método</th>
+                                    <th rowspan="3">Argentina</th>
+                                    <th rowspan="2">ARS$58.500</th>
+                                </tr>
+                                <tr>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">30% por debajo del Mercado</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="3">~375 trades</td>
+                                    <td rowspan="3">bruBannk</td>
+                                    <td rowspan="3">Zona Norte</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">
+                                        <form action="">
+                                            <!--  Boton Comprar -->
+                                            <input type="submit" value="Comprar" />
+                                        </form>
+                                    </td>
+                                </tr>
+                                <tr>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid footer--estilo footer--responsive " >
+        <div class="row">
+            <div class="col-lg-3 col-xs-12">
+                <ul>
+                    <!--  Footer Columna   1/4 -->
+                    <li class="negrita" class="italic">Acerca de Nosotros</li>
+                    <li>localpp.com</li>
+                    <li>Es un mercado P2P para la compra y venta de saldo PayPal.</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-xs-12">
+                <ul>
+                    <!--  Footer Columna   2/4 -->
+                    <li class="negrita">Links Importantes</li>
+                    <li><a href="../index.html">HOME </a></li>
+                    <li><a href="../pages/explorar.html">EXPLORAR </a></li>
+                    <li><a href="../pages/mis-intercambios.html">INTERCAMBIOS </a></li>
+                    <li><a href="../pages/contacto.html">CONTACTO </a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-xs-12">
+                <ul>
+                    <!--  Footer Columna   3/4 -->
+                    <li class="negrita"><a href="index.html">LocalPP.com </a></li>
+                    <li><a href="">Política de Privacidad </a></li>
+                    <li><a href="">Términos y condiciones </a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-xs-12">
+                <ul>
+                    <!--  Footer Columna   4/4 -->
+                    <li class="negrita">Redes Sociales </li>
+                    <li><a href="https://www.facebook.com" target="_blank">Facebook </a></li>
+                    <li><a href="https://www.twitter.com" target="_blank">Twitter </a></li>
+                    <li><a href="https://www.telegram.org" target="_blank">Telegram </a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <!--  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script> -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>

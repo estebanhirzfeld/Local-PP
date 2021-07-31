@@ -1,0 +1,13 @@
+
+@import "colors";
+@import "contenedores";
+
+@for $i from 1 through 8 {
+    .table--#{$i}{
+        @extend.table__explorar--estilo;
+        @extend.botonGenerico;
+        
+
+    }
+}
+

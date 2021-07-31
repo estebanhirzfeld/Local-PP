@@ -1,0 +1,605 @@
+.colorBoton1, .div__contenido--estilo .contenido__boton--estilo:hover, .cajon__boton--estilo:hover {
+  background: #dfdede; }
+
+.colorBoton2, .div__contenido--estilo .contenido__boton--estilo:active, .cajon__boton--estilo:active {
+  background: #c2c2c2;
+  border: 1px solid #c2c2c2; }
+
+.negrita {
+  font-weight: bold; }
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url("/assets/img/doodle.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #a2b2e2; }
+
+.div__nav--estilo {
+  background-image: url("/assets/img/doodle.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #998bb3;
+  box-shadow: 0px 8px 6px rgba(54, 54, 80, 0.4);
+  border-radius: 0px 0px 30px 30px; }
+
+.cajon__placeholder--estilo {
+  font-size: 80%;
+  font-weight: bold;
+  color: #707070; }
+
+.footer--estilo {
+  background-image: url("/assets/img/doodle.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #bfa2b5;
+  box-shadow: 0px 8px 6px rgba(54, 54, 80, 0.4); }
+
+.footer--estilo div div ul li {
+  list-style: none; }
+
+/*----Tablas -----*/
+.table__explorar--estilo, .div__explorador--estilo, .table--1, .table--2, .table--3, .table--4, .table--5, .table--6, .table--7, .table--8 {
+  border-collapse: collapse;
+  table-layout: fixed;
+  background-image: url("/assets/img/doodle.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #998bb3;
+  box-shadow: 0px 8px 6px rgba(54, 54, 80, 0.4);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  text-align: center; }
+
+/*----Link Colores-----*/
+a:link {
+  /*Link Sin Visitar*/
+  text-decoration: none;
+  color: black; }
+
+a:visited {
+  /*Link Visitado*/
+  text-decoration: none;
+  color: black; }
+
+a:hover {
+  /*Mouse por Encima (Sombra)*/
+  text-decoration: none;
+  text-shadow: 0px 0px 10px;
+  color: black; }
+
+a:active {
+  /*Al Hacer Click*/
+  text-decoration: none;
+  color: purple; }
+
+.colorBoton1, .div__contenido--estilo .contenido__boton--estilo:hover, .cajon__boton--estilo:hover {
+  background: #dfdede; }
+
+.colorBoton2, .div__contenido--estilo .contenido__boton--estilo:active, .cajon__boton--estilo:active {
+  background: #c2c2c2;
+  border: 1px solid #c2c2c2; }
+
+.negrita {
+  font-weight: bold; }
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url("/assets/img/doodle.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #a2b2e2; }
+
+.div__nav--estilo {
+  background-image: url("/assets/img/doodle.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #998bb3;
+  box-shadow: 0px 8px 6px rgba(54, 54, 80, 0.4);
+  border-radius: 0px 0px 30px 30px; }
+
+.cajon__placeholder--estilo {
+  font-size: 80%;
+  font-weight: bold;
+  color: #707070; }
+
+.footer--estilo {
+  background-image: url("/assets/img/doodle.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #bfa2b5;
+  box-shadow: 0px 8px 6px rgba(54, 54, 80, 0.4); }
+
+.footer--estilo div div ul li {
+  list-style: none; }
+
+/*----Tablas -----*/
+.table__explorar--estilo, .div__explorador--estilo, .table--1, .table--2, .table--3, .table--4, .table--5, .table--6, .table--7, .table--8 {
+  border-collapse: collapse;
+  table-layout: fixed;
+  background-image: url("/assets/img/doodle.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #998bb3;
+  box-shadow: 0px 8px 6px rgba(54, 54, 80, 0.4);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  text-align: center; }
+
+/*----Link Colores-----*/
+a:link {
+  /*Link Sin Visitar*/
+  text-decoration: none;
+  color: black; }
+
+a:visited {
+  /*Link Visitado*/
+  text-decoration: none;
+  color: black; }
+
+a:hover {
+  /*Mouse por Encima (Sombra)*/
+  text-decoration: none;
+  text-shadow: 0px 0px 10px;
+  color: black; }
+
+a:active {
+  /*Al Hacer Click*/
+  text-decoration: none;
+  color: purple; }
+
+.botonGenerico input, .div__explorador--estilo input, .table--1 input, .table--2 input, .table--3 input, .table--4 input, .table--5 input, .table--6 input, .table--7 input, .table--8 input {
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 8px 6px rgba(54, 54, 80, 0.4); }
+
+.botonGenerico input:hover, .div__explorador--estilo input:hover, .table--1 input:hover, .table--2 input:hover, .table--3 input:hover, .table--4 input:hover, .table--5 input:hover, .table--6 input:hover, .table--7 input:hover, .table--8 input:hover {
+  background: #dfdede; }
+
+.botonGenerico input:active, .div__explorador--estilo input:active, .table--1 input:active, .table--2 input:active, .table--3 input:active, .table--4 input:active, .table--5 input:active, .table--6 input:active, .table--7 input:active, .table--8 input:active {
+  background: #c2c2c2;
+  border: 1px solid #c2c2c2; }
+
+.botonGenerico button, .div__explorador--estilo button, .table--1 button, .table--2 button, .table--3 button, .table--4 button, .table--5 button, .table--6 button, .table--7 button, .table--8 button {
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 8px 6px rgba(54, 54, 80, 0.4); }
+
+.botonGenerico button:hover, .div__explorador--estilo button:hover, .table--1 button:hover, .table--2 button:hover, .table--3 button:hover, .table--4 button:hover, .table--5 button:hover, .table--6 button:hover, .table--7 button:hover, .table--8 button:hover {
+  background: #dfdede; }
+
+.botonGenerico button:active, .div__explorador--estilo button:active, .table--1 button:active, .table--2 button:active, .table--3 button:active, .table--4 button:active, .table--5 button:active, .table--6 button:active, .table--7 button:active, .table--8 button:active {
+  background: #c2c2c2;
+  border: 1px solid #c2c2c2; }
+
+.botonGenerico select, .div__explorador--estilo select, .table--1 select, .table--2 select, .table--3 select, .table--4 select, .table--5 select, .table--6 select, .table--7 select, .table--8 select {
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 8px 6px rgba(54, 54, 80, 0.4); }
+
+.botonGenerico select:hover, .div__explorador--estilo select:hover, .table--1 select:hover, .table--2 select:hover, .table--3 select:hover, .table--4 select:hover, .table--5 select:hover, .table--6 select:hover, .table--7 select:hover, .table--8 select:hover {
+  background: #dfdede; }
+
+.botonGenerico select:active, .div__explorador--estilo select:active, .table--1 select:active, .table--2 select:active, .table--3 select:active, .table--4 select:active, .table--5 select:active, .table--6 select:active, .table--7 select:active, .table--8 select:active {
+  background: #c2c2c2;
+  border: 1px solid #c2c2c2; }
+
+.div__contenido--estilo .contenido__boton--estilo {
+  cursor: pointer;
+  height: 50px;
+  background-color: white;
+  border: 1px solid;
+  border-radius: 15px; }
+  .div__contenido--estilo .contenido__boton--estilo h2 {
+    text-align: center; }
+
+.div__contenido--estilo div div h2 {
+  font-size: 15px;
+  text-align: center; }
+
+.div__contenido--estilo iframe {
+  filter: blur(2px);
+  height: 250px;
+  width: 100%;
+  border-radius: 15px; }
+
+.div__contenido--estilo .contenido__cajon--estilo {
+  height: auto;
+  background-color: #998bb3;
+  border: 1px solid;
+  border-radius: 15px; }
+  .div__contenido--estilo .contenido__cajon--estilo .cajon__selectIzq--estilo {
+    outline: none;
+    text-align-last: center;
+    appearance: none;
+    height: 70px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: -15px 2px 7px -17px #363650; }
+  .div__contenido--estilo .contenido__cajon--estilo .cajon__selectDer--estilo {
+    text-align: center;
+    outline: none;
+    border: none;
+    text-align-last: center;
+    appearance: none;
+    height: 70px;
+    border-radius: 15px; }
+  .div__contenido--estilo .contenido__cajon--estilo .cajon__placeholder--estilo {
+    position: relative;
+    bottom: 70px;
+    left: 11px; }
+
+.cajon__boton--estilo {
+  border: none;
+  outline: none;
+  width: 49px;
+  height: 49px;
+  border-radius: 100px; }
+  .cajon__boton--estilo span {
+    font-size: 17px;
+    color: #707070; }
+
+.div__explorador--estilo select {
+  width: 80%;
+  height: 40px;
+  text-align-last: center;
+  appearance: none; }
+
+.div__nav--estilo {
+  margin-bottom: 50px; }
+
+.div__slogan--estilo .row {
+  justify-content: center; }
+
+.div__slogan--estilo div h2 {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  text-align: center; }
+
+.div__contenido--estilo .contenido__cajon {
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+.div__contenido--estilo .contenido__boton--estilo {
+  margin-top: 20px; }
+  .div__contenido--estilo .contenido__boton--estilo h2 {
+    margin-top: 14px; }
+
+.div__contenido--estilo div div h2 {
+  margin-top: 8px;
+  margin-bottom: 20px; }
+
+.div__slogan--estilo {
+  margin-top: 50px; }
+
+.footer--estilo {
+  padding: 20px; }
+
+.div__filtros--estilo {
+  padding-left: 13px; }
+
+footer--responsive {
+  align-content: center; }
+
+.div__contenido--responsive .row {
+  justify-content: center; }
+
+/* Vista Mobile */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .div__contenido--responsive .row {
+    flex-direction: column-reverse; }
+    .div__contenido--responsive .row .contenido__boton--responsive {
+      margin-bottom: 30px; } }
+
+.contenido__cajon--responsive {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+
+.cajon__selector--responsive {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 70px;
+  width: 90%;
+  border-radius: 15px;
+  background-color: white;
+  /* // box-shadow: 0px 8px 6px rgb(54 54 80 / 40%); */ }
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .div__slogan--responsive div h2 {
+    font-size: 18px; } }
+
+.div__filtros--estilo {
+  align-items: center;
+  justify-content: space-between; }
+
+.colorBoton1, .div__contenido--estilo .contenido__boton--estilo:hover, .cajon__boton--estilo:hover {
+  background: #dfdede; }
+
+.colorBoton2, .div__contenido--estilo .contenido__boton--estilo:active, .cajon__boton--estilo:active {
+  background: #c2c2c2;
+  border: 1px solid #c2c2c2; }
+
+.negrita {
+  font-weight: bold; }
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url("/assets/img/doodle.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #a2b2e2; }
+
+.div__nav--estilo {
+  background-image: url("/assets/img/doodle.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #998bb3;
+  box-shadow: 0px 8px 6px rgba(54, 54, 80, 0.4);
+  border-radius: 0px 0px 30px 30px; }
+
+.cajon__placeholder--estilo {
+  font-size: 80%;
+  font-weight: bold;
+  color: #707070; }
+
+.footer--estilo {
+  background-image: url("/assets/img/doodle.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #bfa2b5;
+  box-shadow: 0px 8px 6px rgba(54, 54, 80, 0.4); }
+
+.footer--estilo div div ul li {
+  list-style: none; }
+
+/*----Tablas -----*/
+.table__explorar--estilo, .div__explorador--estilo, .table--1, .table--2, .table--3, .table--4, .table--5, .table--6, .table--7, .table--8 {
+  border-collapse: collapse;
+  table-layout: fixed;
+  background-image: url("/assets/img/doodle.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #998bb3;
+  box-shadow: 0px 8px 6px rgba(54, 54, 80, 0.4);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  text-align: center; }
+
+/*----Link Colores-----*/
+a:link {
+  /*Link Sin Visitar*/
+  text-decoration: none;
+  color: black; }
+
+a:visited {
+  /*Link Visitado*/
+  text-decoration: none;
+  color: black; }
+
+a:hover {
+  /*Mouse por Encima (Sombra)*/
+  text-decoration: none;
+  text-shadow: 0px 0px 10px;
+  color: black; }
+
+a:active {
+  /*Al Hacer Click*/
+  text-decoration: none;
+  color: purple; }
+
+.colorBoton1, .div__contenido--estilo .contenido__boton--estilo:hover, .cajon__boton--estilo:hover {
+  background: #dfdede; }
+
+.colorBoton2, .div__contenido--estilo .contenido__boton--estilo:active, .cajon__boton--estilo:active {
+  background: #c2c2c2;
+  border: 1px solid #c2c2c2; }
+
+.negrita {
+  font-weight: bold; }
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url("/assets/img/doodle.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #a2b2e2; }
+
+.div__nav--estilo {
+  background-image: url("/assets/img/doodle.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #998bb3;
+  box-shadow: 0px 8px 6px rgba(54, 54, 80, 0.4);
+  border-radius: 0px 0px 30px 30px; }
+
+.cajon__placeholder--estilo {
+  font-size: 80%;
+  font-weight: bold;
+  color: #707070; }
+
+.footer--estilo {
+  background-image: url("/assets/img/doodle.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #bfa2b5;
+  box-shadow: 0px 8px 6px rgba(54, 54, 80, 0.4); }
+
+.footer--estilo div div ul li {
+  list-style: none; }
+
+/*----Tablas -----*/
+.table__explorar--estilo, .div__explorador--estilo, .table--1, .table--2, .table--3, .table--4, .table--5, .table--6, .table--7, .table--8 {
+  border-collapse: collapse;
+  table-layout: fixed;
+  background-image: url("/assets/img/doodle.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #998bb3;
+  box-shadow: 0px 8px 6px rgba(54, 54, 80, 0.4);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  text-align: center; }
+
+/*----Link Colores-----*/
+a:link {
+  /*Link Sin Visitar*/
+  text-decoration: none;
+  color: black; }
+
+a:visited {
+  /*Link Visitado*/
+  text-decoration: none;
+  color: black; }
+
+a:hover {
+  /*Mouse por Encima (Sombra)*/
+  text-decoration: none;
+  text-shadow: 0px 0px 10px;
+  color: black; }
+
+a:active {
+  /*Al Hacer Click*/
+  text-decoration: none;
+  color: purple; }
+
+.botonGenerico input, .div__explorador--estilo input, .table--1 input, .table--2 input, .table--3 input, .table--4 input, .table--5 input, .table--6 input, .table--7 input, .table--8 input {
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 8px 6px rgba(54, 54, 80, 0.4); }
+
+.botonGenerico input:hover, .div__explorador--estilo input:hover, .table--1 input:hover, .table--2 input:hover, .table--3 input:hover, .table--4 input:hover, .table--5 input:hover, .table--6 input:hover, .table--7 input:hover, .table--8 input:hover {
+  background: #dfdede; }
+
+.botonGenerico input:active, .div__explorador--estilo input:active, .table--1 input:active, .table--2 input:active, .table--3 input:active, .table--4 input:active, .table--5 input:active, .table--6 input:active, .table--7 input:active, .table--8 input:active {
+  background: #c2c2c2;
+  border: 1px solid #c2c2c2; }
+
+.botonGenerico button, .div__explorador--estilo button, .table--1 button, .table--2 button, .table--3 button, .table--4 button, .table--5 button, .table--6 button, .table--7 button, .table--8 button {
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 8px 6px rgba(54, 54, 80, 0.4); }
+
+.botonGenerico button:hover, .div__explorador--estilo button:hover, .table--1 button:hover, .table--2 button:hover, .table--3 button:hover, .table--4 button:hover, .table--5 button:hover, .table--6 button:hover, .table--7 button:hover, .table--8 button:hover {
+  background: #dfdede; }
+
+.botonGenerico button:active, .div__explorador--estilo button:active, .table--1 button:active, .table--2 button:active, .table--3 button:active, .table--4 button:active, .table--5 button:active, .table--6 button:active, .table--7 button:active, .table--8 button:active {
+  background: #c2c2c2;
+  border: 1px solid #c2c2c2; }
+
+.botonGenerico select, .div__explorador--estilo select, .table--1 select, .table--2 select, .table--3 select, .table--4 select, .table--5 select, .table--6 select, .table--7 select, .table--8 select {
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 8px 6px rgba(54, 54, 80, 0.4); }
+
+.botonGenerico select:hover, .div__explorador--estilo select:hover, .table--1 select:hover, .table--2 select:hover, .table--3 select:hover, .table--4 select:hover, .table--5 select:hover, .table--6 select:hover, .table--7 select:hover, .table--8 select:hover {
+  background: #dfdede; }
+
+.botonGenerico select:active, .div__explorador--estilo select:active, .table--1 select:active, .table--2 select:active, .table--3 select:active, .table--4 select:active, .table--5 select:active, .table--6 select:active, .table--7 select:active, .table--8 select:active {
+  background: #c2c2c2;
+  border: 1px solid #c2c2c2; }
+
+.div__contenido--estilo .contenido__boton--estilo {
+  cursor: pointer;
+  height: 50px;
+  background-color: white;
+  border: 1px solid;
+  border-radius: 15px; }
+  .div__contenido--estilo .contenido__boton--estilo h2 {
+    text-align: center; }
+
+.div__contenido--estilo div div h2 {
+  font-size: 15px;
+  text-align: center; }
+
+.div__contenido--estilo iframe {
+  filter: blur(2px);
+  height: 250px;
+  width: 100%;
+  border-radius: 15px; }
+
+.div__contenido--estilo .contenido__cajon--estilo {
+  height: auto;
+  background-color: #998bb3;
+  border: 1px solid;
+  border-radius: 15px; }
+  .div__contenido--estilo .contenido__cajon--estilo .cajon__selectIzq--estilo {
+    outline: none;
+    text-align-last: center;
+    appearance: none;
+    height: 70px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: -15px 2px 7px -17px #363650; }
+  .div__contenido--estilo .contenido__cajon--estilo .cajon__selectDer--estilo {
+    text-align: center;
+    outline: none;
+    border: none;
+    text-align-last: center;
+    appearance: none;
+    height: 70px;
+    border-radius: 15px; }
+  .div__contenido--estilo .contenido__cajon--estilo .cajon__placeholder--estilo {
+    position: relative;
+    bottom: 70px;
+    left: 11px; }
+
+.cajon__boton--estilo {
+  border: none;
+  outline: none;
+  width: 49px;
+  height: 49px;
+  border-radius: 100px; }
+  .cajon__boton--estilo span {
+    font-size: 17px;
+    color: #707070; }
+
+.div__explorador--estilo select {
+  width: 80%;
+  height: 40px;
+  text-align-last: center;
+  appearance: none; }
