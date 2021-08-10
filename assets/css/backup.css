@@ -1,0 +1,906 @@
+/* -------HOJA DE ESTILOS ANIMADA------- */
+
+/* vista Mobile */
+/* @media only screen and (min-width:0px) and (max-width:767px){} */
+
+/* vista Desktop */
+/* @media only screen and (min-width:767px){ */
+
+/* -------Animaciones varias------- */
+
+.grid input[name="mejor_valorado"]:checked{
+    box-shadow: rgb(220 211 107 / 96%) -396px 148px 84px 110px;
+}
+
+.grid input[name="ahora_linea"]:checked{
+    box-shadow: rgb(76 210 60 / 96%) -514px 477px 84px 110px;
+}
+
+
+#botonBuscar:hover{ 
+    background:#dfdede; 
+}
+#botonBuscar:active{background:#c2c2c2; border:1px solid #c2c2c2; }
+
+
+table:hover{
+    transition:0.1s;
+    transform: rotateY(-360deg);
+
+    background-image: url("../Images/doodle.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #7f6ca1;
+
+    color:black;
+
+    box-shadow: 0px 8px 6px rgba(120, 81, 160, 0.836);
+    
+}
+
+nav input[type="checkbox"]{
+    transition:1s;
+
+}
+
+nav input[type="checkbox"]:checked{
+    transition: 1s;
+    position: relative;
+    z-index: 5;
+    box-shadow: 601px 45px 1000px 1000px rgb(0 0 0 / 77%);
+}
+
+.cajaSelectora button:hover{
+    transition: 3s;
+    width:  43px;
+    height: 43px;
+    transform: rotateZ(-9999999999999999999999999999999deg);
+    box-shadow: 0px 0px 8px rgb(239 10 10 / 79%);
+}
+
+
+/* -------body------- */
+body:hover{
+    background: linear-gradient(#a2b2e2, #475274);
+}
+body {
+    
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("../Images/doodle.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #a2b2e2;
+}
+
+.botonColors:hover{ background:#dfdede; }
+.botonColors:active{background:#c2c2c2; border:1px solid #c2c2c2; }
+
+
+.semi-negrita {
+    font-weight: 600;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.texto-gris{
+    color: #707070;
+}
+
+/* -------navBar------- */
+
+nav{
+    margin-bottom: 30px;
+    
+    background-image: url("../Images/doodle.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #998bb3;
+    box-shadow: 0px 8px 6px rgba(54, 54, 80, 0.4);
+    border-radius: 30px;
+    
+    height: 80px;
+    
+    display:grid;
+    
+}
+
+
+
+
+/* vista Mobile */
+@media only screen and (min-width:0px) and (max-width:420px){
+    
+
+    nav div{
+        position: relative;
+        left: 322px;
+        bottom: -14px;
+        z-index: 3;
+        background: #ffffff;
+        width: 50px;
+        height: 50px;
+        border: 1px solid rgb(226 226 226);
+        border-radius: 100%;
+        cursor: pointer;
+        box-shadow: 0px 0px 21px rgb(16 16 16 / 49%);
+        }
+        
+    nav div span{
+        padding-left:7px;
+        text-align: center;
+        color: #707070;
+        font-weight: bold;
+        display:inline-flex;
+        align-items:center;
+        height:100%;
+        font-size: 37px;
+    }
+}
+/* vista Desktop */
+@media only screen and (min-width:420px){
+    nav div{
+        display: none;
+    }
+    nav div span{
+        display: none;
+    }
+}
+/* vista Mobile */
+@media only screen and (min-width:0px) and (max-width:767px){
+
+    nav ul{   
+        display:none;
+    }
+
+    nav ul li{
+        width:auto;
+        list-style: none;
+    }
+}
+/* vista Desktop */
+@media only screen and (min-width:767px){
+
+    nav ul{   
+        display:grid;
+        grid-template-columns:7% 15.5% 15.5% 15.5% 15.5% 15.5% 15.5%;
+    }
+
+    nav ul li{
+        margin-top: 14px;
+        width:auto;
+        list-style: none;
+    }
+}
+
+/* -------superCaja de seccion 1 y 2 con Grid------- */
+
+/* vista Mobile */
+@media only screen and (min-width:0px) and (max-width:767px){
+    #superCaja{
+        display:flex;
+        align-items:center;
+        flex-direction: column;
+    }
+}
+/* vista Desktop */
+@media only screen and (min-width:767px){
+    #superCaja{
+        display:flex;
+        justify-content:center;
+        flex-direction: row-reverse;
+    }
+}
+
+#caja{
+    width: 390px;
+    height: 280px;
+    padding:10px;
+    margin-bottom:30px;
+}
+
+/* -------seccion 1------- */
+
+#seccion1{
+    text-align:center;
+}
+#seccion1 h3{
+    font-weight: 600;
+    color: #3F3F3F;
+}
+
+
+/* -------iframe------- */
+/* vista Mobile */
+@media only screen and (min-width:0px) and (max-width:767px){
+    iframe{
+        margin-top: 20px;
+        width: 322px;
+        height:183px;
+        filter: blur(2px);
+        border-radius: 30px;
+        box-shadow: 0px 8px 6px rgba(54, 54, 80, 0.4);
+    }
+}
+
+/* vista Desktop */
+@media only screen and (min-width:767px){
+    iframe{
+        transition:1s;
+        margin-top: 20px;
+        width: 450px;
+        height:250px;
+        filter: blur(2px);
+        border-radius: 30px;
+        box-shadow: 0px 8px 6px rgba(54, 54, 80, 0.4);
+    }
+    
+    iframe:hover{
+        transition:1s;
+        margin-top: 20px;
+        width: 469px;
+        height:269px;
+        filter: blur(0px);
+        border-radius: 30px;
+        box-shadow: 0px 8px 6px rgba(54, 54, 80, 0.4);
+    }
+}    
+/* -------seccion 2------- */
+/* -------cajaSelectora------- */
+
+.cajaSelectora{
+    margin-top: 20px;
+    padding: 10px;
+    margin-left: 45px;
+    border-radius: 15px;
+    background-color: #998bb3;
+    width: 280px;
+    height: 170px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 42% 42%;
+    grid-row-gap: 20px;
+    box-shadow: 0px 8px 6px rgb(54 54 80 / 40%);
+}
+
+.cajaSelectora button{
+    transition: 0.9s;
+    transform: rotateZ(-180deg);
+    z-index: 3;
+    position: relative;
+    left:120px;
+    top:-120px;
+    background: #FFFFFF;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgb(226 226 226);
+    border-radius: 100%;
+    cursor: pointer;
+    
+    box-shadow: 0px 0px 8px rgb(16 16 16 / 49%);
+}
+
+.cajaSelectora button span{
+    text-align: center;
+    color: #707070;
+    font-weight: bold;
+    display:inline-flex;
+    align-items:center;
+    height:100%;
+    font-size: 17px;
+}
+
+.customPlaceholder{
+    position: relative;
+    left: 10px;
+    top: -20px;
+    color: gray;
+}
+
+.leftBox{
+    background-color:rgb(255, 255, 255);
+    border-top-left-radius:15px ;
+    border-bottom-left-radius:15px ;
+    
+    box-shadow: 0px 8px 6px rgb(54 54 80 / 40%);
+}
+
+.leftBox form input{
+    border: none;
+    position: relative;
+    left: 9px;
+    top: -43px;
+    width: 93px;
+    height: 38px;
+}
+
+.rightBox{
+    background-color:rgb(255, 255, 255);
+    border-top-right-radius:15px ;
+    border-bottom-right-radius:15px ;
+    
+    box-shadow: 0px 8px 6px rgb(54 54 80 / 40%);
+}
+
+.rightBox form input{
+    border: none;
+    position: relative;
+    left: 9px;
+    top: -35px;
+    width: 93px;
+    height: 38px;
+}
+
+.rightBox select{
+    position: relative;
+    width: 100px;
+    height: 52px;
+    left: 10px;
+    top: 10px;
+    text-align-last: center;
+    border:none;
+    appearance: none;
+    cursor: pointer;
+}
+
+#botonBuscar{
+    transition:1s;
+    transform: rotateY(-360deg);
+    
+    justify-content:center;
+    margin-top:20px;
+    margin-left: 55px;
+    width: 280px;
+    height: 55px;
+    background: #FFFFFF;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0px 8px 6px rgb(54 54 80 / 40%);
+    margin-bottom:10px;
+}
+
+
+/* -------seccion 3------- */
+
+#seccion3 h2{
+    font-weight: normal;
+    text-align:center;
+    font-size: 131%;
+    margin-bottom: 40px;
+}
+
+
+/* -------EXPLORAR PAGE------- */
+
+#mejoresVendedores {
+    width:393px;
+}
+
+
+#seccion2Explorar{
+    margin-bottom: 15px;
+}
+#seccion3Explorar{
+    margin-bottom: 60px;
+}
+
+
+
+table{
+
+    color:rgb(37, 37, 37);
+
+    background-image: url("../Images/doodle.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #998bb3;
+    box-shadow: 0px 8px 6px rgba(54, 54, 80, 0.4);
+
+    margin-top:10px;
+    margin-bottom:10px;
+    border-radius: 15px;
+}
+
+table input[type="submit"]{
+    justify-content:center;
+        width: 100px;
+        height: 30px;
+        background: #FFFFFF;
+        border: none;
+        outline: none;
+        border-radius: 15px;
+        overflow: hidden;
+        cursor: pointer;
+        box-shadow: 0px 8px 6px rgb(54 54 80 / 40%);
+        margin-bottom:10px;
+    
+        
+    }
+table input[type="submit"]:hover{ background:#dfdede; }
+table input[type="submit"]:active{background:#c2c2c2; border:1px solid #c2c2c2; }
+
+
+/* vista Mobile */
+@media only screen and (min-width:0px) and (max-width:767px){
+    #flexbox{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #flexboxLeft{
+        margin-bottom: 10px;
+        padding:1px;
+        width:100%;
+        display: grid;
+    }
+    
+}
+/* vista Desktop */
+@media only screen and (min-width:767px){
+    #flexbox{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    #flexboxLeft{
+        padding:10px 30px 10px 30px;
+        width:30%;
+        display: grid;
+    }
+}
+#explorador{
+    
+    transition: 0.5s;
+    transform: rotateY(-360deg);
+
+
+    background-image: url("../Images/doodle.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #998bb3;
+    box-shadow: 0px 8px 6px rgba(54, 54, 80, 0.4);
+    
+    text-align:center;
+    padding:10px 0px 30px 0px;
+    display: grid;
+    grid-template-columns:100%;
+    grid-auto-rows: auto;
+    justify-items: center;
+    row-gap:10px;
+    height:230px;
+    border-radius:15px;
+}
+
+#explorador form select{
+    text-align:left;
+    text-align-last:center;
+    appearance: none;
+    box-shadow: -13px 0px 3px -13px grey;
+    
+    border-radius: 15px;
+    width: 220px;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    color: black;
+    
+    box-shadow: 0px 8px 6px rgb(54 54 80 / 40%);
+    
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:100%;
+    grid-auto-rows:auto;
+    gap:10px;
+}
+
+.seccion2{
+    display:flex;
+    justify-content:space-between;
+    flex-direction:row;
+    align-items:stretch;
+}
+
+/* vista Mobile */
+@media only screen and (min-width:0px) and (max-width:767px){
+        .seccion2{
+            text-align: center;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+}
+
+.seccion3 table{
+    text-align:center;
+}
+
+
+.seccion2 h2{
+    margin:0px;
+}
+
+.seccion2 fieldset{
+    border:none;
+}
+
+/* .seccion3{} */
+
+/* .seccion4{} */
+
+.seccion4 h2{
+    margin:0px;
+}
+/* vista Mobile */
+@media only screen and (min-width:0px) and (max-width:767px){
+    .seccion4 h2{
+        text-align: center;
+    }
+}
+/* .seccion5{} */
+
+.seccion5 table{
+    text-align:center;
+}
+
+/* -------MIS OFERTAS PAGE------- */
+
+#misOfertasFlex{
+    display: flex;
+    flex-direction:column;
+}
+
+#misOfertasFlex table td{
+    text-align: center;
+}
+
+#misOfertasFlex table td li{
+    list-style:none;
+    text-align:left;
+}
+
+#misOfertasFlex div button{
+    margin-bottom: 80px;
+}
+
+#misOfertasFlex div button{
+    margin-top:15px
+}
+
+#misOfertasFlex button{
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    background: #FFFFFF;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0px 8px 6px rgb(54 54 80 / 40%);
+    margin-bottom: 10px;
+}
+
+#misOfertasFlex button:hover{ background:#dfdede;}
+#misOfertasFlex button:active{background:#c2c2c2; border:1px solid #c2c2c2;}
+
+/* vista Desktop */
+@media only screen and (min-width: 767px){
+
+    #misOfertasFlex div{
+        margin-left:40px;
+    }
+
+    #misOfertasMobile{
+        display:none;
+    }
+}
+
+/* vista Mobile */
+@media only screen and (min-width: 0px) and (max-width: 767px){
+    
+    #misOfertasFlex{
+    align-items: center;    
+}
+    
+    #misOfertasDesktop{
+        display:none
+    }
+}
+
+/* -------MIS INTERCAMBIOS PAGE------- */
+
+#tablaDesktop, #tablaMobile{
+    margin-top: 25px;
+    margin-bottom:80px;
+}
+
+#tablaDesktop, #tablaMobile{
+    margin-top: 25px;
+    margin-bottom:80px;
+}
+
+#intercambiosFlex{
+    display:flex;
+    flex-direction:row;
+    justify-content:start;
+}
+
+#intercambiosFlex div{
+    width: 50%;
+    border:1px solid;
+}
+
+#intercambiosFlex a{
+    color: -webkit-link;
+}
+
+#intercambiosFlex h3{
+    margin-right: 40px;
+}
+#tablaDesktop{
+    margin-left: 50px;
+}
+
+/* vista Desktop */
+@media only screen and (min-width:767px){
+    #intercambiosHeader{
+        margin-left: 50px;
+    }
+    
+    #intercambiosFlex{
+        margin-left: 50px;
+        display:flex;
+        flex-direction:row;
+        justify-content:start;
+    }
+    
+    #tablaMobile{
+        display:none;
+    }
+}
+
+/* vista Mobile */
+@media only screen and (min-width:0px) and (max-width:767px){
+    #intercambiosHeader{
+        margin-left: 20px;
+    }
+    
+    #intercambiosFlex h3{
+        margin: 5px 0px 5px 20px;
+    }
+    
+    #tablaDesktop{
+        display:none;
+    }
+
+}
+
+
+/* -------CONTACTO PAGE------- */
+
+/* vista Desktop */
+@media only screen and (min-width:767px){
+    #contactoGrid{
+        display:grid;
+        justify-content: space-around;
+        grid-template-columns:50% 50%;
+        grid-template-rows: auto auto;
+    } 
+    
+    #labelContacto{
+        font-size: 24px;
+        padding: 0px 70px 0px 180px;
+    }
+    
+    #labelContacto h2{
+        margin-top:0px;
+    }
+    
+    #inputContacto{
+        margin-left:100px;
+        display:grid;
+        row-gap:11px;
+    }
+    
+    #inputContacto input[type="text"],textarea{
+        
+        border-radius: 15px;
+        border: none;
+        height:40px;
+        width:360px;
+    
+        background: #FFFFFF;
+        border: 1px solid rgb(226 226 226);
+        box-shadow: 0px 0px 8px rgb(16 16 16 / 49%);
+    }
+    
+    #inputContacto textarea{
+        border: none;
+        height: 150px;
+        width:360px;
+    
+        border: 1px solid rgb(226 226 226);
+        box-shadow: 0px 0px 8px rgb(16 16 16 / 49%);
+    }
+    
+    #inputContacto input[type=submit]{
+        border: none;
+        border-radius: 15px;
+        height: 35px;
+        width:150px;
+        
+        background: #FFFFFF;
+        border: 1px solid rgb(226 226 226);
+        cursor: pointer;
+        box-shadow: 0px 0px 8px rgb(16 16 16 / 49%);
+        margin-bottom: 50px;
+    }
+    
+    #headerContacto{
+        text-align:center;
+        grid-column:1/3;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+}
+
+/* vista Mobile */
+@media only screen and (min-width:0px) and (max-width:767px){
+
+    #contactoGrid{
+        display:grid;
+        justify-items: center;
+        grid-template-columns:100%;
+    } 
+    
+    #headerContacto{
+        font-size:20px;
+        text-align:center;
+    }
+
+    #headerContacto h2{
+        font-size:22px;
+        text-align:center;
+        margin-bottom: 30px;
+    }
+    
+    #labelContacto{
+        text-align:center;
+        font-size: 18px;
+    }
+    
+    #labelContacto h2{
+        margin-top:0px;
+    }
+    
+    #inputContacto{
+        display:grid;
+        row-gap:10px;
+    }
+    
+    #inputContacto input[type="text"],textarea{
+        border-radius: 10px;
+        border: none;
+        height:32px;
+        width:301px;
+    
+        background: #FFFFFF;
+        border: 1px solid rgb(226 226 226);
+        box-shadow: 0px 0px 8px rgb(16 16 16 / 49%);
+    }
+    
+    #inputContacto textarea{
+        border: none;
+        height: 150px;
+        width:303px;
+    
+        background: #FFFFFF;
+        border: 1px solid rgb(226 226 226);
+        box-shadow: 0px 0px 8px rgb(16 16 16 / 49%);
+    }
+    
+    #inputContacto input[type=submit]{
+        border: none;
+        border-radius: 10px;
+        height: 30px;
+        width:150px;
+        
+        background: #FFFFFF;
+        border: 1px solid rgb(226 226 226);
+        cursor: pointer;
+        box-shadow: 0px 0px 8px rgb(16 16 16 / 49%);
+    }
+    
+    
+}
+#inputContacto input[type=submit]:hover{ background:#dfdede; }
+#inputContacto input[type=submit]:active{background:#c2c2c2; border:1px solid #c2c2c2; }
+
+/* -------Footer------- */
+/* vista Mobile */
+@media only screen and (min-width:0px) and (max-width:767px){
+    .footer{
+        background-image: url("../Images/doodle.png");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #bfa2b5;
+        box-shadow: 0px 8px 6px rgba(54, 54, 80, 0.4);
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 100%;
+        
+    }
+}
+
+/* vista Desktop */
+@media only screen and (min-width:767px){
+    .footer{
+        background-image: url("../Images/doodle.png");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #bfa2b5;
+        box-shadow: 0px 8px 6px rgba(54, 54, 80, 0.4);
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25% ;
+        
+    }
+}
+
+
+.footer ul{
+    list-style: none;
+}
+
+/*----Link Colores-----*/
+
+a:link {
+    /*Link Sin Visitar*/
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    /*Link Visitado*/
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    transition:1s;
+    font-size: 110%;
+
+    text-decoration: none;
+    text-shadow: 0px 0px 10px;
+    color: black;
+}
+
+a:active {
+    /*Al Hacer Click*/
+    text-decoration: none;
+    color: purple;
+}

@@ -1,0 +1,21 @@
+
+body{
+    color:white;
+    background: rgb(1,22,56);
+    background: linear-gradient(90deg, rgba(1,22,56,1) 0%, rgba(46,41,78,1) 50%, rgba(144,85,162,1) 100%, rgba(2,0,36,1) 011638%);
+}
+
+
+
+.primerRow{
+    text-align: center;
+    margin-top:130px;
+    justify-content:center;
+    align-items: center;
+}
+
+.primerRow img{
+    max-width:200px;
+    height:auto;
+    padding:0px;
+}

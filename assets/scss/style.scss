@@ -1,7 +1,32 @@
-@import "colors";
-@import "contenedores";
-@import "marginPadding";
+@import "colors-styles";
+@import "margin-padding";
 @import "responsive";
-@import "tables";
+
+@import "mis-ofertas";
+
+@import "media-mobile";
+@import "media-tablet";
+
+
+.centered{
+    justify-content:center;
+}
+
+.navbar-nav li{
+    margin-left: 25px ;
+    margin-right:25px ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 

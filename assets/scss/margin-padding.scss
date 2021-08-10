@@ -1,0 +1,106 @@
+//ALL PAGES
+
+
+
+.footer--responsive{
+    padding-top:20px;
+    margin-top:100px;
+}    
+
+.div__nav--responsive{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+// INDEX PAGE
+
+.div__cajaSelectora--style{
+    padding:30px;
+}
+
+.div__cajaSup--responsive,.div__cajaInf--responsive{
+    padding:5px;
+}
+.div__cajaSup--responsive{
+    margin: 0px 0px 15px 0px;
+}
+.div__cajaInf--responsive{
+    margin: 15px 0px 0px 0px;
+}
+
+.cajaSelectora__botonBuscarOfertas--responsive{ 
+    margin-top:15px;
+    margin-bottom:7px;
+}
+
+.h2__slogan--responsive{
+    margin-top:120px;
+}
+
+.cajaSelectora__customPlaceholder{
+    padding-right: 0px;
+    width: 200px;
+}
+
+// EXPLORAR PAGE
+
+
+table{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    & tbody input{
+        padding: 6px 15px 6px 15px ;
+    }
+}
+
+.div__similares--style{
+    margin-top:30px;
+}
+
+// MIS OFERTAS PAGE
+
+.boton__crearNuevaOferta{
+    margin-top:15px;
+    margin-bottom:130px;
+    padding:5px 10px 5px 10px;
+}
+
+.misOfertasMobile{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.misOfertasDesktop{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+
+
+// MIS INTERCAMBIOS PAGE
+
+.tablaMobile{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tablaDesktop{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.botones__Oferta{
+    margin-bottom: 100px;
+}
+
+// CONTACTO PAGE
+
+.contacto__slogan--style h2{
+    margin-top:55px;
+}
+
+
+.boton__contacto--style{
+    padding:5px 10px 5px 10px;
+}

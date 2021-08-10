@@ -1,0 +1,33 @@
+
+// POTRAIT
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /// EXPLORAR PAGE //////////////////////////////////////////////////
+    .div__filtros--responsive{
+        text-align:center;
+        align-content:center;
+        justify-content: center;
+    }
+    
+
+    
+    /// MIS INTERCAMBIOS PAGE //////////////////////////////////////////////////
+    .tablaMobile{
+        display:none;
+    }
+    
+    .misOfertasMobile{
+        display:none;
+    }
+
+    /// CONTACTO PAGE //////////////////////////////////////////////////
+    .contacto__slogan--style{
+        margin-top:50px;
+        text-align:center;
+    }
+}
+
+// LANDSCAPE
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+}

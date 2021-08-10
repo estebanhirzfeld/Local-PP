@@ -1,0 +1,139 @@
+
+// POTRAIT -----------------------------------------------------
+
+// INDEX PAGE //////////////////////////////////////////////////
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .pizza{
+        flex-direction: column-reverse;
+    }
+
+    .cajaSelectora__botonBuscarOfertas--responsive{ 
+        margin-bottom:80px;
+    }
+    
+    iframe{
+        height:300px;
+    }
+
+    .h2__slogan{
+        font-weight: 100;
+        text-align: center;
+        color: white;
+        font-size:130%;
+    }
+
+    .h2__slogan--responsive{
+        margin-top:60px;
+    }
+
+    .footer--responsive{
+        margin-top:60px;
+    }    
+
+/// EXPLORAR PAGE //////////////////////////////////////////////////
+.div__filtros--responsive{
+    text-align:center;
+    align-content:center;
+    justify-content: center;
+}
+
+    /// MIS OFERTAS PAGE //////////////////////////////////////////////////
+    .misOfertasDesktop li, .misOfertasMobile li{
+        text-align:start;
+    }
+
+    .misOfertasDesktop{
+        display:none;
+    }
+
+    .contacto__slogan--style{
+        margin-top:50px;
+        text-align:center;
+
+        & p{
+            margin-top:15px;
+            font-size:120%;
+        }
+    }
+
+/// MIS INTERCAMBIOS PAGE //////////////////////////////////////////////////
+.tablaDesktop{
+    display:none;
+}
+
+.botones__Oferta{
+    justify-content: center;
+}
+}
+
+/// CONTACTO PAGE //////////////////////////////////////////////////
+
+
+
+
+// LANDSCAPE ---------------------------------------------------
+
+// INDEX PAGE //////////////////////////////////////////////////
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .pizza{
+        flex-direction: column-reverse;
+    }
+    
+    .cajaSelectora__botonBuscarOfertas--responsive{ 
+        margin-bottom:80px;
+    }
+    
+    iframe{
+        height:300px;
+    }
+    
+    .h2__slogan{
+        font-weight: 100;
+        text-align: center;
+        color: white;
+        font-size:140%;
+    }
+    
+    .h2__slogan--responsive{
+        margin-top:40px;
+    }
+    
+    .footer--responsive{
+        margin-top:40px;
+    }    
+    
+    /// EXPLORAR PAGE //////////////////////////////////////////////////
+    .div__filtros--responsive{
+        text-align:center;
+        align-content:center;
+        justify-content: center;
+    }
+
+    /// MIS OFERTAS PAGE //////////////////////////////////////////////////
+    .misOfertasDesktop li, .misOfertasMobile li{
+        text-align:start;
+    }
+
+    .misOfertasDesktop{
+        display:none;
+    }
+    
+    /// MIS INTERCAMBIOS PAGE //////////////////////////////////////////////////
+    
+    .tablaDesktop{
+        display:none;
+    }
+    
+    .botones__Oferta{
+        justify-content: center;
+    }
+    
+    /// CONTACTO PAGE //////////////////////////////////////////////////
+    .contacto__slogan--style{
+        margin-top:50px;
+        text-align:center;
+    }
+}

@@ -1,0 +1,57 @@
+
+//ALL PAGES
+
+
+
+// INDEX PAGE
+
+.div__cajaSelectora--responsive{
+    flex-direction: column;
+}
+
+.div__cajaSup--responsive,.div__cajaInf--responsive{
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+
+.cajaSelectora__botonSwitch--responsive{
+    top: 110px;
+    left: 0px
+}
+
+// EXPLORAR PAGE
+
+
+.div__filtros--responsive{
+    display:flex;
+    justify-content: flex-end;
+}
+
+// MIS OFERTAS PAGE
+
+
+
+@media (min-width: 768px) {
+    .misOfertasMobile{
+        display:none;
+    }
+}
+
+
+// MIS INTERCAMBIOS PAGE
+
+.botones__Oferta{
+    display:flex;
+    justify-content: flex-end;
+}
+
+@media (min-width: 768px) {
+    .tablaMobile{
+        display:none;
+    }
+}
+
+.boton__contacto--style{
+    display:flex;
+    justify-content: flex-end;
+}

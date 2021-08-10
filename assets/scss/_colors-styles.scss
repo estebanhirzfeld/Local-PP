@@ -1,0 +1,293 @@
+$colorscroll:rgba(1,22,56,1);
+
+@mixin borderAndShadow{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius:15px;    
+}
+
+// https://prnt.sc/1i7khk9 Darken
+// https://prnt.sc/1jlkga0 Paleta de colores violet
+
+
+// SCROLL BAR
+
+body::-webkit-scrollbar-track{
+    background-color:rgb(63, 36, 71);
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+    @include borderAndShadow;
+    background-color:#011638;
+}
+body::-webkit-scrollbar-thumb:hover{
+    background-color:#01122d;
+    
+}
+
+
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+//
+// CLASSES
+
+.negrita{
+    font-weight:bold;
+}
+
+.disabled{
+    color:#919191;
+}
+
+// ALL PAGES 
+
+a:link{
+    color: white;
+}
+
+a:visited{
+    color: white;
+}
+a:active{
+    color: white;
+}
+
+a:hover{
+    cursor: pointer;
+    text-decoration: none;
+    color:white;
+}
+
+.div__nav--style{
+    background-color: rgba(46, 41, 78, 0.211);
+    backdrop-filter: blur(10px);
+}
+
+body{
+    background: rgb(1,22,56);
+    background: linear-gradient(90deg, rgba(1,22,56,1) 0%, rgba(46,41,78,1) 50%, rgba(144,85,162,1) 100%, rgba(2,0,36,1) 011638%);
+
+    // background: rgb(144,85,162);
+    // background: linear-gradient(90deg, rgba(144,85,162,1) 0%, rgba(212,153,185,1) 50%, rgba(232,193,197,1) 100%, rgba(2,0,36,1) 011638%);
+}
+
+.footer--style{
+    color: white;
+    background-color: rgba(46, 41, 78, 0.211);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.109);
+
+    & li{
+        list-style: none;
+    }
+}
+
+
+
+// INDEX PAGE
+
+iframe{
+    width:100%;
+    height:100%;
+    @include borderAndShadow;
+}
+
+.div__cajaSelectora--style{
+    @include borderAndShadow;    
+    
+    background-color: rgba(35, 17, 35, 0.401);
+    backdrop-filter: blur(10px);
+    
+}
+
+.cajaSelectora__input--style{
+    border-radius: 15px 0px 0px 15px;
+    text-align: center;
+    border:none;
+    outline:none;
+    background-color:white;
+}
+
+.cajaSelectora__selectora--style{
+    border-radius: 0px 15px 15px 0px;
+    text-align-last:center;
+    border:none;
+    outline:none;
+    appearance: none;
+    background-color:white;
+    height:80px;
+    box-shadow: -15px 2px 7px -13px #c6c6c6;
+
+}
+
+input:hover, select:hover{ 
+    background:darken(white,15%);
+}
+
+
+
+.div__cajaSup--style,.div__cajaInf--style{
+    @include borderAndShadow;
+    
+    background-color: white;
+    
+}
+
+.cajaSelectora__botonSwitch--style{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 100px;
+    width:  55px;
+    height: 55px;
+    border: 1px solid gray;
+}
+
+.cajaSelectora__botonBuscarOfertas--style{   
+    @include borderAndShadow;
+    border: none;
+    height: 50px;
+}
+
+.iframe__slogan--style{
+    color: white;
+    text-align: center;
+    font-size:120%;
+}
+
+.h2__slogan{
+    font-weight: 100;
+    text-align: center;
+    color: white;
+    font-size:150%;
+}
+
+// EXPLORAR PAGE
+
+.div__explorador--style{
+    color: white;
+    @include borderAndShadow;
+    text-align: center;
+    background-color: rgba(35, 17, 35, 0.401);
+}
+
+.div__selector--style{
+    
+    & select{
+        @include borderAndShadow;
+        outline:none;
+        border:none;
+        appearance: none;
+        width: 80%;
+        height:40px;
+        text-align-last: center;
+    }
+}
+
+
+.div__filtros--responsive{
+    color: white;
+    align-items: center;
+    
+
+    & select{
+        text-align-last: center;
+
+    }
+}
+
+.div__similares--style{
+    color: white;
+}
+
+table{
+    
+    border-collapse: collapse;
+    table-layout: fixed;
+
+    color: white;
+    @include borderAndShadow;
+    background-color: rgba(35, 17, 35, 0.401);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    
+    & tbody input{
+        border: none;
+        @include borderAndShadow;
+    }
+}
+
+// MIS OFERTAS PAGE
+
+
+.misOfertas__titulo{
+    color: white;
+    text-align: center;
+
+}
+
+.misOfertasDesktop li, .misOfertasMobile li{
+    list-style: none;
+}
+
+.boton__crearNuevaOferta{
+    border:none;
+    outline:none;
+    @include borderAndShadow();
+}
+
+// MIS INTERCAMBIOS PAGE
+
+
+.misIntercambios__titulos{
+    color: white;
+    text-align: center;
+    
+}
+
+// CONTACTO PAGE
+
+.contacto__titulos--style{
+    align-items: baseline;
+    color: white;
+
+    & div h1{
+        font-size: 50px;
+    }
+    & div h2{
+        font-size: 25px;
+    }
+}
+
+.contacto__slogan--style h2{
+        font-weight: 400;
+}
+
+.contacto__slogan--style p{
+        font-weight: 100;
+        font-size: 175%;
+}
+
+
+.custom-select{
+    @include borderAndShadow();
+    outline: none;
+    border: none;
+}
+
+.form-control{
+    min-height: 180px;
+    @include borderAndShadow();
+    outline: none;
+    border: none;
+}
+
+.boton__contacto--style{
+    
+    
+    border:none;
+    outline:none;
+    @include borderAndShadow();
+}

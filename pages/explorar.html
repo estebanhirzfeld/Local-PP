@@ -1,11 +1,12 @@
 <!doctype html>
 <html lang="es">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet "href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
 
     <!-- Bootstrap CSS -->
@@ -16,10 +17,11 @@
     <title>Explorar - LocalPP</title>
 </head>
 
-<body >
+<body>
 
-    <div class="container-fluid div__nav--estilo">
-        <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid div__nav--responsive div__nav--style">
+        <!-- NavBar Responsive -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <a class="navbar-brand" href="../index.html">localPP</a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -27,10 +29,11 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse centered " id="navbarNav">
+                <ul class="navbar-nav ">
                     <li class="nav-item active"><a class="nav-link" href="../pages/explorar.html">🔍Explorar </a></li>
-                    <li class="nav-item active"><a class="nav-link" href="../pages/mis-ofertas.html">Mis Ofertas(1) </a></li>
+                    <li class="nav-item active"><a class="nav-link" href="../pages/mis-ofertas.html">Mis Ofertas(1) </a>
+                    </li>
                     <li class="nav-item active"><a class="nav-link" href="../pages/mis-intercambios.html">Mis
                             Intercambios(15)</a></li>
                     <li class="nav-item active"><a class="nav-link" href="">Cartera (ARS$10.000) </a></li>
@@ -42,9 +45,9 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-3 col-xs-12 rojo">
+            <div class="col-lg-3 col-md-12 col-sm-12 col-12 ">
 
-                <div class="div__explorador--estilo animate__bounceIn">
+                <div class="div__explorador--style animate__bounceIn">
                     <div>
                         <form>
                             <input type="radio" name="comprarVender" value="comprar">
@@ -54,44 +57,44 @@
                         </form>
                     </div>
 
-                    <div class="div__Selector--estilo">
+                    <div class="div__selector--style">
                         <legend>Saldo</legend>
-                        <select class="form-select form-select-lg mb-3 selectDer" aria-label=".form-select-lg example">
+                        <select class="form-select form-select-lg mb-3 " aria-label=".form-select-lg example">
                             <option value="1">Paypal</option>
                         </select>
                     </div>
 
-                    <div class="div__Selector--estilo">
+                    <div class="div__selector--style">
                         <legend>Ubicacion</legend>
-                        <select class="form-select form-select-lg mb-3 selectDer" aria-label=".form-select-lg example">
+                        <select class="form-select form-select-lg mb-3 " aria-label=".form-select-lg example">
                             <option value="1">Zona Norte</option>
                             <option value="2">Zona Sur</option>
                             <option value="3">Zona Oeste</option>
                         </select>
                     </div>
 
-                    <div class="div__Selector--estilo">
+                    <div class="div__selector--style">
                         <legend>Metodo de Pago</legend>
-                        <select class="form-select form-select-lg mb-3 selectDer" aria-label=".form-select-lg example">
-                            <option value="1">Uala          </option>
-                            <option value="2">bruBank       </option>
+                        <select class="form-select form-select-lg mb-3 " aria-label=".form-select-lg example">
+                            <option value="1">Uala </option>
+                            <option value="2">bruBank </option>
                             <option value="3">Transferencia </option>
-                            <option value="4">MercadoPago   </option>
+                            <option value="4">MercadoPago </option>
                             <option value="5">CuentaDigital </option>
 
-                            
+
                         </select>
                     </div>
                 </div>
 
             </div>
-            <div class="col-lg-9 col-xs-12 verde">
-                <div class="row seccion2 div__filtros--estilo">
-                    <div id="mejoresVendedores">
+            <div class="col-lg-9 col-md-12 col-sm-12 col-12">
+                <div class="row div__filtros--responsive div__filtros--style">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
                         <h2>Mejores Vendedores 👑</h2>
                     </div>
 
-                    <div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12 div__filtros--responsive">
                         <form action="">
                             <fieldset>
                                 <label for="mejor">Mejor valorado</label>
@@ -106,12 +109,11 @@
                             </fieldset>
                         </form>
                     </div>
-
                 </div>
-                <div class="seccion3">
-                    <section id="seccion2Explorar">
 
-                        <table class="table--1" width="100%">
+                <div>
+                    <section>
+                        <table width="100%">
                             <thead>
                                 <tr>
                                     <th rowspan="3">burberry</th>
@@ -144,7 +146,7 @@
                             </tbody>
                         </table>
 
-                        <table class="table--2" width="100%">
+                        <table width="100%">
                             <thead>
                                 <tr>
                                     <th rowspan="3">orangejuice</th>
@@ -179,16 +181,11 @@
                     </section>
 
                 </div>
-                <div class="seccion4">
-
+                <div class="div__similares--style">
                     <h2>Ofertas Similares</h2> <br>
+                    <section>
 
-                </div>
-                <div class="seccion5">
-
-                    <section id="seccion3Explorar">
-
-                        <table class="table--3" width="100%">
+                        <table width="100%">
                             <thead>
                                 <tr>
                                     <th rowspan="3">flycoffee</th>
@@ -221,7 +218,7 @@
                             </tbody>
                         </table>
 
-                        <table class="table--4" width="100%">
+                        <table width="100%">
                             <thead>
                                 <tr>
                                     <th rowspan="3">Clarinet</th>
@@ -254,7 +251,7 @@
                             </tbody>
                         </table>
 
-                        <table class="table--5" width="100%">
+                        <table width="100%">
                             <thead>
                                 <tr>
                                     <th rowspan="3">Milkyway1</th>
@@ -287,7 +284,7 @@
                             </tbody>
                         </table>
 
-                        <table class="table--6" width="100%">
+                        <table width="100%">
                             <thead>
                                 <tr>
                                     <th rowspan="3">highmoon</th>
@@ -320,7 +317,7 @@
                             </tbody>
                         </table>
 
-                        <table class="table--7" width="100%">
+                        <table width="100%">
                             <thead>
                                 <tr>
                                     <th rowspan="3">burberry</th>
@@ -353,7 +350,7 @@
                             </tbody>
                         </table>
 
-                        <table class="table--8" width="100%">
+                        <table width="100%">
                             <thead>
                                 <tr>
                                     <th rowspan="3">burberry</th>
@@ -393,18 +390,19 @@
         </div>
     </div>
 
-    <footer class="container-fluid footer--estilo footer--responsive " >
+    <footer class="container-fluid footer--style footer--responsive ">
+        <!-- Footer-->
         <div class="row">
-            <div class="col-lg-3 col-xs-12">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-12">
                 <ul>
                     <!--  Footer Columna   1/4 -->
-                    <li class="negrita" class="italic">Acerca de Nosotros</li>
+                    <li class="negrita">Acerca de Nosotros</li>
                     <li>localpp.com</li>
                     <li>Es un mercado P2P para la compra y venta de saldo PayPal.</li>
                 </ul>
             </div>
 
-            <div class="col-lg-3 col-xs-12">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-12">
                 <ul>
                     <!--  Footer Columna   2/4 -->
                     <li class="negrita">Links Importantes</li>
@@ -415,7 +413,7 @@
                 </ul>
             </div>
 
-            <div class="col-lg-3 col-xs-12">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-12">
                 <ul>
                     <!--  Footer Columna   3/4 -->
                     <li class="negrita"><a href="index.html">LocalPP.com </a></li>
@@ -424,24 +422,35 @@
                 </ul>
             </div>
 
-            <div class="col-lg-3 col-xs-12">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-12">
                 <ul>
                     <!--  Footer Columna   4/4 -->
                     <li class="negrita">Redes Sociales </li>
-                    <li><a href="https://www.facebook.com" target="_blank">Facebook </a></li>
-                    <li><a href="https://www.twitter.com" target="_blank">Twitter </a></li>
-                    <li><a href="https://www.telegram.org" target="_blank">Telegram </a></li>
+                    <li><a href="https://www.facebook.com" target="_blank">
+                            <ion-icon name="logo-facebook"></ion-icon> Facebook
+                        </a></li>
+                    <li><a href="https://www.twitter.com" target="_blank">
+                            <ion-icon name="logo-twitter"></ion-icon> Twitter
+                        </a></li>
+                    <li><a href="https://www.instagram.com" target="_blank">
+                            <ion-icon name="logo-instagram"></ion-icon> Instagram
+                        </a></li>
                 </ul>
             </div>
         </div>
     </footer>
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+
+    <!-- Script de Iconos -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+    <!-- Script de Jquery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
-    <!--  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script> -->
+
+    <!-- Script de Bootstrap -->
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
-    
 </body>
+
 </html>
