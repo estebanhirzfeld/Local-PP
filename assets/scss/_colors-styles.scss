@@ -35,6 +35,16 @@ body::-webkit-scrollbar-thumb:hover{
 //
 // CLASSES
 
+@mixin botonColors{
+    background-color: white;
+    &:hover{
+        background:darken(white,15%);
+    }
+    &:active{
+        background:darken(white,30%);
+    }
+}
+
 .negrita{
     font-weight:bold;
 }
@@ -143,10 +153,13 @@ input:hover, select:hover{
     width:  55px;
     height: 55px;
     border: 1px solid gray;
+    @include botonColors;
+
 }
 
 .cajaSelectora__botonBuscarOfertas--style{   
     @include borderAndShadow;
+    @include botonColors;
     border: none;
     height: 50px;
 }
@@ -216,6 +229,8 @@ table{
     & tbody input{
         border: none;
         @include borderAndShadow;
+        @include botonColors;
+
     }
 }
 
@@ -236,6 +251,8 @@ table{
     border:none;
     outline:none;
     @include borderAndShadow();
+    @include botonColors;
+
 }
 
 // MIS INTERCAMBIOS PAGE
@@ -245,6 +262,14 @@ table{
     color: white;
     text-align: center;
     
+}
+
+.botones__Oferta{
+    border:none;
+    outline:none;
+    @include borderAndShadow();
+    @include botonColors;
+
 }
 
 // CONTACTO PAGE
@@ -290,4 +315,6 @@ table{
     border:none;
     outline:none;
     @include borderAndShadow();
+    @include botonColors;
+
 }

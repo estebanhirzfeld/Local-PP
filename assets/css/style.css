@@ -92,13 +92,23 @@ input:hover, select:hover {
   border-radius: 100px;
   width: 55px;
   height: 55px;
-  border: 1px solid gray; }
+  border: 1px solid gray;
+  background-color: white; }
+  .cajaSelectora__botonSwitch--style:hover {
+    background: #d9d9d9; }
+  .cajaSelectora__botonSwitch--style:active {
+    background: #b3b3b3; }
 
 .cajaSelectora__botonBuscarOfertas--style {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
+  background-color: white;
   border: none;
   height: 50px; }
+  .cajaSelectora__botonBuscarOfertas--style:hover {
+    background: #d9d9d9; }
+  .cajaSelectora__botonBuscarOfertas--style:active {
+    background: #b3b3b3; }
 
 .iframe__slogan--style {
   color: white;
@@ -149,7 +159,12 @@ table {
   table tbody input {
     border: none;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 15px; }
+    border-radius: 15px;
+    background-color: white; }
+    table tbody input:hover {
+      background: #d9d9d9; }
+    table tbody input:active {
+      background: #b3b3b3; }
 
 .misOfertas__titulo {
   color: white;
@@ -162,11 +177,27 @@ table {
   border: none;
   outline: none;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 15px; }
+  border-radius: 15px;
+  background-color: white; }
+  .boton__crearNuevaOferta:hover {
+    background: #d9d9d9; }
+  .boton__crearNuevaOferta:active {
+    background: #b3b3b3; }
 
 .misIntercambios__titulos {
   color: white;
   text-align: center; }
+
+.botones__Oferta {
+  border: none;
+  outline: none;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  background-color: white; }
+  .botones__Oferta:hover {
+    background: #d9d9d9; }
+  .botones__Oferta:active {
+    background: #b3b3b3; }
 
 .contacto__titulos--style {
   align-items: baseline;
@@ -200,7 +231,12 @@ table {
   border: none;
   outline: none;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 15px; }
+  border-radius: 15px;
+  background-color: white; }
+  .boton__contacto--style:hover {
+    background: #d9d9d9; }
+  .boton__contacto--style:active {
+    background: #b3b3b3; }
 
 .footer--responsive {
   padding-top: 20px;
@@ -264,6 +300,8 @@ table {
   margin-bottom: 20px; }
 
 .botones__Oferta {
+  padding: 5px 10px 5px 10px;
+  margin-left: 20px;
   margin-bottom: 100px; }
 
 .contacto__slogan--style h2 {
@@ -302,6 +340,9 @@ table {
 .boton__contacto--style {
   display: flex;
   justify-content: flex-end; }
+
+nav li a:hover {
+  transform: scale(1.05, 1.05); }
 
 @media (min-width: 320px) and (max-width: 480px) {
   .pizza {
