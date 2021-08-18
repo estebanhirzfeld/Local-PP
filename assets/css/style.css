@@ -199,6 +199,39 @@ table {
   .botones__Oferta:active {
     background: #b3b3b3; }
 
+.table__usuario--style {
+  border-collapse: collapse;
+  table-layout: fixed;
+  color: white;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  background-color: rgba(35, 17, 35, 0.401);
+  backdrop-filter: blur(10px);
+  text-align: left; }
+  .table__usuario--style td {
+    padding: 20px;
+    height: 45px; }
+  .table__usuario--style th {
+    padding: 20px;
+    height: 50px; }
+
+.div__confiarUsuario--style {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  background-color: rgba(35, 17, 35, 0.401);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  padding: 10px;
+  height: 250px; }
+
+.div__tiemposUsuario--style {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  background-color: rgba(35, 17, 35, 0.401);
+  backdrop-filter: blur(10px);
+  height: 250px;
+  padding: 10px; }
+
 .contacto__titulos--style {
   align-items: baseline;
   color: white; }

@@ -269,8 +269,51 @@ table{
     outline:none;
     @include borderAndShadow();
     @include botonColors;
+    
+}
+
+// USUARIO PAGE
+
+.table__usuario--style{
+    
+    border-collapse: collapse;
+    table-layout: fixed;
+
+    color: white;
+    @include borderAndShadow;
+    background-color: rgba(35, 17, 35, 0.401);
+    backdrop-filter: blur(10px);
+    text-align: left;
+    
+    
+    & td{
+        padding: 20px;
+        height: 45px;
+    }
+
+    & th{
+        padding: 20px;
+        height: 50px;
+    }
 
 }
+
+.div__confiarUsuario--style{
+    @include borderAndShadow;
+    background-color: rgba(35, 17, 35, 0.401);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    padding: 10px;
+    height: 250px;
+}
+.div__tiemposUsuario--style{
+    @include borderAndShadow;
+    background-color: rgba(35, 17, 35, 0.401);
+    backdrop-filter: blur(10px);
+    height: 250px;
+    padding: 10px;
+}
+
 
 // CONTACTO PAGE
 
