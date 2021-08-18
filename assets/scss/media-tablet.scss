@@ -20,6 +20,30 @@
         display:none;
     }
 
+        /// USUARIO PAGE //////////////////////////////////////////////////
+    .usuario__titulos{
+        text-align:center;
+    }
+    .usuario__insignia{
+        justify-content: center;
+    }
+    .usuario__avatar{
+        display:none;
+    }
+    .usuario__avatar{
+        display:none;
+    }
+    .usuario__informacion--responsive{
+        margin-top:20px;
+        flex-direction: column-reverse;
+    }
+    .div__confiarUsuario--responsive{
+        margin-bottom:50px;
+    }
+    
+    .div__tiemposUsuario--responsive{
+        display:none;
+    }
     /// CONTACTO PAGE //////////////////////////////////////////////////
     .contacto__slogan--style{
         margin-top:50px;
@@ -30,4 +54,10 @@
 // LANDSCAPE
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+        /// USUARIO PAGE //////////////////////////////////////////////////
+    .usuario__insignia{
+        justify-content: center;
+    }
+
+
 }

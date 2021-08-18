@@ -199,9 +199,14 @@ table {
   .botones__Oferta:active {
     background: #b3b3b3; }
 
-.usuario__titulos h1, h2 {
+.usuario__insignia {
   color: white;
-  margin-bottom: 25px; }
+  font-size: 25px; }
+  .usuario__insignia:hover {
+    color: yellow; }
+
+.usuario__titulos h1, h2 {
+  color: white; }
 
 .table__usuario--style {
   border-collapse: collapse;
@@ -213,11 +218,9 @@ table {
   backdrop-filter: blur(10px);
   text-align: left; }
   .table__usuario--style td {
-    padding: 20px;
-    height: 45px; }
+    width: 50%; }
   .table__usuario--style th {
-    padding: 20px;
-    height: 50px; }
+    width: 50%; }
 
 .div__confiarUsuario--style {
   color: white;
@@ -226,14 +229,11 @@ table {
   background-color: rgba(35, 17, 35, 0.401);
   backdrop-filter: blur(10px);
   text-align: center;
-  padding: 10px;
   height: 250px; }
   .div__confiarUsuario--style ion-icon {
     color: green;
     font-size: 50px; }
   .div__confiarUsuario--style div button {
-    margin-top: 25px;
-    padding: 5px 15px 5px 15px;
     border: none;
     outline: none;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
@@ -245,7 +245,6 @@ table {
       background: #b3b3b3; }
 
 .div__tiemposUsuario--style {
-  margin-top: 50px;
   text-align: center;
   font-size: 20px;
   color: white;
@@ -253,8 +252,7 @@ table {
   border-radius: 15px;
   background-color: rgba(35, 17, 35, 0.401);
   backdrop-filter: blur(10px);
-  height: 250px;
-  padding: 10px; }
+  height: 250px; }
 
 .contacto__titulos--style {
   align-items: baseline;
@@ -327,7 +325,6 @@ table {
   width: 200px; }
 
 table {
-  margin-top: 10px;
   margin-bottom: 10px; }
   table tbody input {
     padding: 6px 15px 6px 15px; }
@@ -360,6 +357,28 @@ table {
   padding: 5px 10px 5px 10px;
   margin-left: 20px;
   margin-bottom: 100px; }
+
+.usuario__informacion--responsive {
+  margin-top: 20px; }
+
+.usuario__titulos h1, h2 {
+  margin-bottom: 25px; }
+
+.table__usuario--style td {
+  padding: 20px; }
+
+.table__usuario--style th {
+  padding: 20px; }
+
+.div__confiarUsuario--style {
+  padding: 10px; }
+  .div__confiarUsuario--style div button {
+    margin-top: 25px;
+    padding: 5px 15px 5px 15px; }
+
+.div__tiemposUsuario--style {
+  margin-top: 50px;
+  padding: 10px; }
 
 .contacto__slogan--style h2 {
   margin-top: 55px; }
@@ -398,6 +417,10 @@ table {
   display: flex;
   justify-content: flex-end; }
 
+.div__tiemposUsuario--responsive {
+  display: flex;
+  align-items: center; }
+
 nav li a:hover {
   transform: scale(1.05, 1.05); }
 
@@ -434,7 +457,22 @@ nav li a:hover {
   .tablaDesktop {
     display: none; }
   .botones__Oferta {
-    justify-content: center; } }
+    justify-content: center; }
+  .usuario__titulos {
+    text-align: center; }
+  .usuario__insignia {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center; }
+  .usuario__avatar {
+    display: none; }
+  .usuario__informacion--responsive {
+    margin-top: 20px;
+    flex-direction: column-reverse; }
+  .div__confiarUsuario--responsive {
+    margin-bottom: 50px; }
+  .div__tiemposUsuario--responsive {
+    display: none; } }
 
 @media (min-width: 481px) and (max-width: 767px) {
   .pizza {
@@ -464,6 +502,21 @@ nav li a:hover {
     display: none; }
   .botones__Oferta {
     justify-content: center; }
+  .usuario__titulos {
+    text-align: center; }
+  .usuario__insignia {
+    justify-content: center; }
+  .usuario__avatar {
+    display: none; }
+  .usuario__avatar {
+    display: none; }
+  .usuario__informacion--responsive {
+    margin-top: 20px;
+    flex-direction: column-reverse; }
+  .div__confiarUsuario--responsive {
+    margin-bottom: 50px; }
+  .div__tiemposUsuario--responsive {
+    display: none; }
   .contacto__slogan--style {
     margin-top: 50px;
     text-align: center; } }
@@ -477,9 +530,28 @@ nav li a:hover {
     display: none; }
   .misOfertasMobile {
     display: none; }
+  .usuario__titulos {
+    text-align: center; }
+  .usuario__insignia {
+    justify-content: center; }
+  .usuario__avatar {
+    display: none; }
+  .usuario__avatar {
+    display: none; }
+  .usuario__informacion--responsive {
+    margin-top: 20px;
+    flex-direction: column-reverse; }
+  .div__confiarUsuario--responsive {
+    margin-bottom: 50px; }
+  .div__tiemposUsuario--responsive {
+    display: none; }
   .contacto__slogan--style {
     margin-top: 50px;
     text-align: center; } }
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .usuario__insignia {
+    justify-content: center; } }
 
 .centered {
   justify-content: center; }
@@ -487,3 +559,6 @@ nav li a:hover {
 .navbar-nav li {
   margin-left: 25px;
   margin-right: 25px; }
+
+ion-icon {
+  pointer-events: none; }

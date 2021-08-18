@@ -46,7 +46,6 @@
 
 
 table{
-    margin-top: 10px;
     margin-bottom: 10px;
     
     & tbody input{
@@ -94,6 +93,39 @@ table{
     padding: 5px 10px 5px 10px;
     margin-left: 20px;
     margin-bottom: 100px;
+}
+
+//USUARIO PAGE
+
+.usuario__informacion--responsive{
+    margin-top: 20px;
+}
+
+.usuario__titulos h1, h2{
+    margin-bottom:25px;
+}
+
+.table__usuario--style{
+    & td{
+        padding: 20px;
+    } 
+    & th{
+        padding: 20px;
+    }
+}
+
+.div__confiarUsuario--style{
+    padding: 10px;
+
+    & div button{
+        margin-top:25px;
+        padding: 5px 15px 5px 15px;
+    }
+}
+
+.div__tiemposUsuario--style{
+    margin-top:50px;
+    padding: 10px;
 }
 
 // CONTACTO PAGE

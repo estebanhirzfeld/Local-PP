@@ -45,7 +45,7 @@
                             Intercambios(15)</a></li>
                     <li class="nav-item active"><a class="nav-link" href="../pages/error-404.html">Cartera (ARS$10.000)
                         </a></li>
-                    <li class="nav-item active"><a class="nav-link" href="../pages/error-404.html">🔔estebanhirzfeld
+                    <li class="nav-item active"><a class="nav-link" href="../pages/perfil.html">🔔estebanhirzfeld
                         </a></li>
                 </ul>
             </div>
@@ -54,23 +54,38 @@
 
     <div class="container">
         <div class="row d-flex align-items-center justify-content-between">
-            <div class="col-lg-6 usuario__titulos">
+            <div data-aos="fade-up" data-aos-duration="500" class="col-lg-6 col-md-12 col-sm-12 col-12 usuario__titulos">
                 <h1>estebanhirzfeld </h1>
                 <h2>Información sobre estebanhirzfeld</h2>
                 <!-- div h1 + h2 space between div foto de perfil con medallas de verificacion (correo nro dni) -->
                 <!-- y en responsive estaria bueno que las insignias aparezcan en row y arriba nombre y foto con eopace between algo asi como mejors vendedores y los filtros -->
             </div>
-            <div class="col-lg-2 ">
-
-                <img class="col-lg-12 rounded-circle"src="https://avatarfiles.alphacoders.com/177/177532.jpg" alt="" height="100%" >
+            <div data-aos="zoom-in"  data-aos-duration="1000" class="col-lg-1 col-md-4 col-sm-4 col-4 d-flex justify-content-lg-end usuario__insignia" data-toggle="tooltip"
+                data-placement="bottom" title="Verificado con DNI">
+                <ion-icon name="star"></ion-icon>
             </div>
+            <div data-aos="zoom-in"  data-aos-duration="1000" class="col-lg-1 col-md-4 col-sm-4 col-4 d-flex justify-content-lg-end usuario__insignia" data-toggle="tooltip"
+                data-placement="top" title="Verificado con Nro. de Teléfono">
+                <ion-icon name="star"></ion-icon>
+            </div>
+            <div data-aos="zoom-in"  data-aos-duration="1000" class="col-lg-1 col-md-4 col-sm-4 col-4 d-flex justify-content-lg-end usuario__insignia " data-toggle="tooltip"
+                data-placement="top" title="Verificado con Email">
+                <ion-icon name="star"></ion-icon>
+            </div>
+            <div data-aos="zoom-in"  data-aos-duration="1000" class="col-lg-2 col-md-3 col-sm-6 col-12 ">
+                <img class="col-lg-12 usuario__avatar rounded-circle" src="https://avatarfiles.alphacoders.com/177/177532.jpg" alt=""
+                    height="100%">
+            </div>
+
         </div>
     </div>
 
     <div class="container">
-        <div class="row">
+        <div class="row usuario__informacion--responsive">
             <div class="col-lg-6">
-                <table class="table__usuario--style">
+                <table data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine" class="table__usuario--style table-striped">
                     <thead>
                         <tr>
                             <th>Volumen de comercio</th>
@@ -137,8 +152,11 @@
             <div class="col-lg-6">
                 <div class="container">
                     <div class="row">
-                        <div
-                            class="col-lg-12 div__confiarUsuario--style d-flex align-items-center justify-content-center">
+                        <div data-aos="fade-left"
+                        data-aos-anchor="#example-anchor"
+                        data-aos-offset="500"
+                        data-aos-duration="500"
+                            class="col-lg-12 div__confiarUsuario--style div__confiarUsuario--responsive d-flex align-items-center justify-content-center">
                             <div class="">
                                 <ion-icon name="checkmark-circle-outline"></ion-icon>
                                 <h2>Confiar en estebanhirzfeld </h2>
@@ -151,15 +169,18 @@
                             </div>
                         </div>
 
-                        <div
-                            class="col-lg-12 div__tiemposUsuario--style d-flex align-items-center justify-content-center">
+                        <div data-aos="fade-left"
+                        data-aos-anchor="#example-anchor"
+                        data-aos-offset="500"
+                        data-aos-duration="500"
+                            class="col-lg-12 div__tiemposUsuario--style div__tiemposUsuario--responsive align-items-center justify-content-center">
                             <div class="">
                                 <p>Tiempos de liberación del depósito en garantía del vendedor</p>
                                 <p>Mediana: 1 min.</p>
                                 <p>Promedio: 26 min.</p>
                             </div>
                         </div>
-                        
+
 
                     </div>
 
@@ -237,6 +258,5 @@
 
     <!-- Script de Bootstrap -->
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
-</body>
 
 </html>
