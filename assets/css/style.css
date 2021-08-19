@@ -293,6 +293,9 @@ table {
   .boton__contacto--style:active {
     background: #b3b3b3; }
 
+.politica__titulos--style {
+  color: white; }
+
 .footer--responsive {
   padding-top: 20px;
   margin-top: 100px; }
@@ -385,6 +388,9 @@ table {
 
 .boton__contacto--style {
   padding: 5px 10px 5px 10px; }
+
+.politica__titulos--style h1 {
+  margin-bottom: 50px; }
 
 .div__cajaSelectora--responsive {
   flex-direction: column; }
