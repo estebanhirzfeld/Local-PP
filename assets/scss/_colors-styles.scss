@@ -308,6 +308,7 @@ table{
         width: 50%;
     }
 
+
 }
 
 .div__confiarUsuario--style{
@@ -389,4 +390,9 @@ table{
     @include borderAndShadow();
     @include botonColors;
 
+}
+
+//Politicas PAGES
+.politica__titulos--style{
+    color:white;
 }
