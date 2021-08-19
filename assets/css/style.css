@@ -142,7 +142,8 @@ input:hover, select:hover {
   color: white;
   align-items: center; }
   .div__filtros--responsive select {
-    text-align-last: center; }
+    text-align-last: center;
+    outline: none; }
 
 .div__similares--style {
   color: white; }

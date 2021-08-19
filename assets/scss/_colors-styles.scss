@@ -203,10 +203,11 @@ input:hover, select:hover{
 .div__filtros--responsive{
     color: white;
     align-items: center;
-    
 
     & select{
         text-align-last: center;
+        outline: none;
+
 
     }
 }
