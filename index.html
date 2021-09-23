@@ -73,7 +73,7 @@
                                 <span class="col-lg-12 d-flex position-absolute cajaSelectora__customPlaceholder">Ud.
                                     Envia
                                     ARS</span>
-                                <input type="number" class="cajaSelectora__input--style" id="inputPesos"> <!-- primera mitad -->
+                                <input onkeyup="cajaSelectoraPesosToDolar()" type="number" class="cajaSelectora__input--style" id="inputPesos"> <!-- primera mitad -->
                                 <select name="" class="cajaSelectora__selectora--style">
                                     <!-- segunda mitad -->
                                     <option value="1">Uala </option>
@@ -109,7 +109,7 @@
                     <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="400"
                         class="col-lg-12 d-flex justify-content-center ">
                         <button
-                            class="col-lg-8  cajaSelectora__botonBuscarOfertas--style cajaSelectora__botonBuscarOfertas--responsive">
+                            class="col-lg-8 cajaSelectora__botonBuscarOfertas cajaSelectora__botonBuscarOfertas--style cajaSelectora__botonBuscarOfertas--responsive">
                             <span>Buscar Ofertas</span>
                         </button>
                     </div>
