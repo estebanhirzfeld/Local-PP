@@ -73,7 +73,7 @@
                                 <span class="col-lg-12 d-flex position-absolute cajaSelectora__customPlaceholder">Ud.
                                     Envia
                                     ARS</span>
-                                <input onkeyup="cajaSelectoraPesosToDolar()" type="number" class="cajaSelectora__input--style" id="inputPesos"> <!-- primera mitad -->
+                                <input onchange="cajaSelectoraPesosToDolar()" type="number" class="cajaSelectora__input--style" id="inputPesos"> <!-- primera mitad -->
                                 <select name="" class="cajaSelectora__selectora--style">
                                     <!-- segunda mitad -->
                                     <option value="1">Uala </option>
@@ -97,7 +97,7 @@
                             <div class="div__cajaInf--responsive div__cajaInf--style">
                                 <span class="col-lg-12 d-flex position-absolute cajaSelectora__customPlaceholder">Ud.
                                     Recibe USD</span>
-                                <input type="number" name="" class="cajaSelectora__input--style" id="inputDolares"> <!-- primera mitad -->
+                                <input onchange="cajaSelectoraDolarToPesos()" type="number" name="" class="cajaSelectora__input--style" id="inputDolares"> <!-- primera mitad -->
                                 <select name="" class="cajaSelectora__selectora--style">
                                     <!-- segunda mitad -->
                                     <option value="1">PayPal</option>
@@ -108,7 +108,7 @@
                     
                     <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="400"
                         class="col-lg-12 d-flex justify-content-center ">
-                        <button
+                        <button onclick="BuscarOfertas()"
                             class="col-lg-8 cajaSelectora__botonBuscarOfertas cajaSelectora__botonBuscarOfertas--style cajaSelectora__botonBuscarOfertas--responsive">
                             <span>Buscar Ofertas</span>
                         </button>

@@ -1,31 +1,40 @@
-function pesosToDolar(){
-    let inputPesos = prompt("Ingresar Monto en Pesos");
-    let outputDolares = (inputPesos / 131)-((inputPesos/131)/100)*6;
-
-}
-
-function dolarToPesos(){
-    let inputDolares = prompt("Ingresar Monto en Dolares");
-    let outputPesos = (inputDolares - (inputDolares/100)*6)*120;
-}
-
 
 function cajaSelectoraPesosToDolar(){
-
     let inputPesos = document.getElementById("inputPesos").value;
+    
+    let outputDolares = (inputPesos / 131)-((inputPesos/131)/100)*6;
+    
+    // console.log("inputPesos: " + inputPesos)
+    
+    inputDolares = document.getElementById("inputDolares").value = outputDolares.toFixed(2);
 
-    console.log(inputPesos)
-
+    return outputDolares.toFixed(2);
 }
 
-    inputDolares = document.getElementById("inputDolares").value = 160;
+function cajaSelectoraDolarToPesos(){
+    let inputDolares = document.getElementById("inputDolares").value;
+    
+    let outputPesos = (inputDolares - (inputDolares/100)*6)*120;
+    
+    // console.log("inputDolares: " + inputDolares)
+    
+    inputPesos = document.getElementById("inputPesos").value = outputPesos.toFixed(2);
+
+    return outputPesos.toFixed(2);
+}
 
 
-    console.log(inputPesos)
+function BuscarOfertas(){
 
+    var valorFiltroPesos = cajaSelectoraDolarToPesos()
+    var valorFiltroDolares = cajaSelectoraPesosToDolar(); 
 
+    console.log("BUSCAR CON ↓")
 
+    console.log(valorFiltroPesos)
+    console.log(valorFiltroDolares)
 
+}
 
 
 
