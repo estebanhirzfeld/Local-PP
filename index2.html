@@ -17,7 +17,7 @@
     <!-- Nuestro CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <title>Comprar y Vender Saldo De PayPal En El Mercado P2P De LocalPP 🔥</title>
+    <title>Test🔥</title>
 
     <link rel="icon" href="assets/img/favicon.png" type="image/png">
     <meta name="description"
@@ -71,24 +71,20 @@
                     <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500"
                         class="container col-lg-8 div__cajaSelectora div__cajaSelectora--style">
                         <div class="row div__cajaSelectora--responsive">
-                            
+
                             <!-- ARS -->
                             <div class="div__cajaSup--responsive div__cajaSup--style">
                                 <span class="col-lg-12 d-flex position-absolute cajaSelectora__customPlaceholder">Ud.
-                                    Envia
-                                    ARS</span>
-                                <input onchange="cajaSelectoraPesosToDolar()" type="number" class="cajaSelectora__input--style" id="inputPesos"> <!-- primera mitad -->
+                                    Recibe USD</span>
+                                <input onchange="cajaSelectoraDolarToPesos()" type="number" name=""
+                                    class="cajaSelectora__input--style" id="inputDolares"> <!-- primera mitad -->
                                 <select name="" class="cajaSelectora__selectora--style">
                                     <!-- segunda mitad -->
-                                    <option value="1">Uala </option>
-                                    <option value="2">bruBank </option>
-                                    <option value="3">Transferencia </option>
-                                    <option value="4">MercadoPago </option>
-                                    <option value="5">CuentaDigital </option>
+                                    <option value="1">PayPal</option>
                                 </select>
                             </div>
 
-                            <!-- SWAP -->
+                            <!-- Swap -->
                             <div
                                 class=" col-lg-12 d-flex justify-content-center position-absolute cajaSelectora__botonSwitch--responsive">
                                 <button onclick="BotonSwap()"
@@ -101,20 +97,26 @@
                             </div>
 
                             <!-- USD -->
-
                             <div class="div__cajaInf--responsive div__cajaInf--style">
                                 <span class="col-lg-12 d-flex position-absolute cajaSelectora__customPlaceholder">Ud.
-                                    Recibe USD</span>
-                                <input onchange="cajaSelectoraDolarToPesos()" type="number" name="" class="cajaSelectora__input--style" id="inputDolares"> <!-- primera mitad -->
+                                    Envia
+                                    ARS</span>
+                                <input onchange="cajaSelectoraPesosToDolar()" type="number"
+                                    class="cajaSelectora__input--style" id="inputPesos"> <!-- primera mitad -->
                                 <select name="" class="cajaSelectora__selectora--style">
                                     <!-- segunda mitad -->
-                                    <option value="1">PayPal</option>
+                                    <option value="1">Uala </option>
+                                    <option value="2">bruBank </option>
+                                    <option value="3">Transferencia </option>
+                                    <option value="4">MercadoPago </option>
+                                    <option value="5">CuentaDigital </option>
                                 </select>
                             </div>
 
+
                         </div>
                     </div>
-                    
+
                     <!-- Boton Buscar Ofertas -->
                     <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="400"
                         class="col-lg-12 d-flex justify-content-center ">
@@ -191,27 +193,27 @@
         </div>
     </footer>
 
-    
+
     <!-- Script de AOS Animate -->
-    
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
-        </script>
+    </script>
 
-<!-- Script de Iconos -->
+    <!-- Script de Iconos -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    
+
     <!-- Script de Jquery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
-        
-        <!-- Script de Bootstrap -->
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-        
-        <!-- Script de Javascript-->
-        <script src="javascript/home.js"></script>
+
+    <!-- Script de Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script de Javascript-->
+    <script src="javascript/home.js"></script>
 </body>
 
 </html>

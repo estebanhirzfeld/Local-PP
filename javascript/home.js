@@ -42,6 +42,19 @@ function BuscarOfertas(){
 
 }
 
+function BotonSwap(){
+    var button = document.getElementById('cajaSelectora__botonSwitch'); // Assumes element with id='button'
+
+button.onclick = function() {
+    var div = document.getElementById('div__cajaSelectora');
+    if (div.style.display !== 'none') {
+        div.style.display = 'none';
+    }
+    else {
+        div.style.display = 'block';
+    }
+};
+}
 
 
 
