@@ -40,15 +40,15 @@ function ubicaciones(){
 
     if((entrada == "zona sur")||(entrada == "sur")){
         const buscarUbicacion = usuarios.filter(ubicacion => ubicacion.ubicacion == "Zona Sur")
-        console.log(buscarUbicacion);
+        console.table(buscarUbicacion);
     
     }else if((entrada == "zona norte")||(entrada == "norte")){
         const buscarUbicacion = usuarios.filter(ubicacion => ubicacion.ubicacion == "Zona Norte")
-        console.log(buscarUbicacion);
+        console.table(buscarUbicacion);
         
     }else if((entrada == "zona oeste")||(entrada == "oeste")){
         const buscarUbicacion = usuarios.filter(ubicacion => ubicacion.ubicacion == "Zona Oeste")
-        console.log(buscarUbicacion);
+        console.table(buscarUbicacion);
     }
     else{
         alert("Lo sentimos, esa ubicacion no esta disponible, intente nuevamente")
@@ -64,11 +64,11 @@ function operaciones(){
 
     if(entrada == "comprar"){
         const buscarOperacion = usuarios.filter(operacion => operacion.operacion == "Comprar")
-        console.log(buscarOperacion);
+        console.table(buscarOperacion);
     
     }else if(entrada == "vender"){
         const buscarOperacion = usuarios.filter(operacion => operacion.operacion == "Vender")
-        console.log(buscarOperacion);
+        console.table(buscarOperacion);
         
     }else{
         alert("Operacion Invalida, intente nuevamente");
@@ -84,23 +84,23 @@ function metodos(){
 
     if(entrada == "uala"){
         const buscarMetodo = usuarios.filter(metodo => metodo.metodo == "Uala")
-        console.log(buscarMetodo);
+        console.table(buscarMetodo);
     
     }else if(entrada == "brubank"){
         const buscarMetodo = usuarios.filter(metodo => metodo.metodo == "Brubank")
-        console.log(buscarMetodo);
+        console.table(buscarMetodo);
         
     }else if(entrada == "transferencia"){
         const buscarMetodo = usuarios.filter(metodo => metodo.metodo == "Transferencia")
-        console.log(buscarMetodo);
+        console.table(buscarMetodo);
                 
     }else if(entrada == "mercadopago"){
         const buscarMetodo = usuarios.filter(metodo => metodo.metodo == "MercadoPago")
-        console.log(buscarMetodo);
+        console.table(buscarMetodo);
                 
     }else if(entrada == "cuenta digital"){
         const buscarMetodo = usuarios.filter(metodo => metodo.metodo == "CuentaDigital")
-        console.log(buscarMetodo);
+        console.table(buscarMetodo);
         
     }else{
         alert("Lo sentimos, aun no tenemos ese metodo de pago");
