@@ -42,6 +42,7 @@ function BuscarOfertas(){
 
 }
 
+
 function BotonSwap(){
     var button = document.getElementById('cajaSelectora__botonSwitch'); // Assumes element with id='button'
 
