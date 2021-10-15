@@ -17,7 +17,7 @@
     <!-- Nuestro CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <title>Test🔥</title>
+    <title>Comprar y Vender Saldo De PayPal En El Mercado P2P De LocalPP 🔥</title>
 
     <link rel="icon" href="assets/img/favicon.png" type="image/png">
     <meta name="description"
@@ -64,12 +64,78 @@
                     allowfullscreen></iframe>
                 <h2 class="iframe__slogan--style">VIDEO INTRODUCTORIO A LOCALPP</h2>
             </div>
+            <!-- Caja Selectora  1 -->
             <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
                 <div class="row">
 
-                    <!-- Caja Selectora  -->
                     <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500"
                         class="container col-lg-8 div__cajaSelectora div__cajaSelectora--style">
+                        <div class="row div__cajaSelectora--responsive">
+
+                            <!-- ARS -->
+                            <div class="div__cajaSup--responsive div__cajaSup--style">
+                                <span class="col-lg-12 d-flex position-absolute cajaSelectora__customPlaceholder">Ud.
+                                    Envia
+                                    ARS</span>
+                                <input type="number" class="cajaSelectora__input--style" id="inputPesos">
+                                <!-- primera mitad -->
+                                <select name="" class="cajaSelectora__selectora--style">
+                                    <!-- segunda mitad -->
+                                    <option value="1">Uala </option>
+                                    <option value="2">bruBank </option>
+                                    <option value="3">Transferencia </option>
+                                    <option value="4">MercadoPago </option>
+                                    <option value="5">CuentaDigital </option>
+                                </select>
+                            </div>
+
+                            <!-- SWAP -->
+                            <div
+                                class=" col-lg-12 d-flex justify-content-center position-absolute cajaSelectora__botonSwitch--responsive">
+                                <button onclick="BotonSwap()" data-aos="zoom-in" data-aos-duration="400"
+                                    class="cajaSelectora__botonSwitch cajaSelectora__botonSwitch--style"
+                                    id="cajaSelectora__botonSwap">
+                                    <span>
+                                        <ion-icon name="repeat-outline"></ion-icon>
+                                    </span>
+                                </button>
+                            </div>
+
+                            <!-- USD -->
+
+                            <div class="div__cajaInf--responsive div__cajaInf--style">
+                                <span class="col-lg-12 d-flex position-absolute cajaSelectora__customPlaceholder">Ud.
+                                    Recibe USD</span>
+                                <input type="number" name="" class="cajaSelectora__input--style" id="inputDolares">
+                                <!-- primera mitad -->
+                                <select name="" class="cajaSelectora__selectora--style">
+                                    <!-- segunda mitad -->
+                                    <option value="1">PayPal</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Boton Buscar Ofertas -->
+                    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="400"
+                        class="col-lg-12 d-flex justify-content-center ">
+                        <button
+                            class="col-lg-8 cajaSelectora__botonBuscarOfertas cajaSelectora__botonBuscarOfertas--style cajaSelectora__botonBuscarOfertas--responsive">
+                            <span>Buscar Ofertas</span>
+                        </button>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <!-- Caja Selectora  2 -->
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
+                <div class="row">
+
+                    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500"
+                        class="container col-lg-8 div__cajaSelectora div__cajaSelectora--style" id="cajaSelectora2">
                         <div class="row div__cajaSelectora--responsive">
 
                             <!-- ARS -->
@@ -87,8 +153,7 @@
                             <!-- Swap -->
                             <div
                                 class=" col-lg-12 d-flex justify-content-center position-absolute cajaSelectora__botonSwitch--responsive">
-                                <button onclick="BotonSwap()"
-                                data-aos="zoom-in" data-aos-duration="400"
+                                <button onclick="BotonSwap()" data-aos="zoom-in" data-aos-duration="400"
                                     class="cajaSelectora__botonSwitch cajaSelectora__botonSwitch--style">
                                     <span>
                                         <ion-icon name="repeat-outline"></ion-icon>
@@ -120,14 +185,17 @@
                     <!-- Boton Buscar Ofertas -->
                     <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="400"
                         class="col-lg-12 d-flex justify-content-center ">
-                        <button onclick="BuscarOfertas()"
+                        <button
                             class="col-lg-8 cajaSelectora__botonBuscarOfertas cajaSelectora__botonBuscarOfertas--style cajaSelectora__botonBuscarOfertas--responsive">
                             <span>Buscar Ofertas</span>
                         </button>
                     </div>
                 </div>
             </div>
+
         </div>
+    </div>
+    </div>
     </div>
     <div class="container">
         <div class="row">

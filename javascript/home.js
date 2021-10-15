@@ -1,9 +1,10 @@
-
 function cajaSelectoraPesosToDolar(){
+
     let inputPesos = document.getElementById("inputPesos").value;
     
     let outputDolares = (inputPesos / 131)-((inputPesos/131)/100)*6;
 
+    
     // console.log("inputPesos: " + inputPesos)
     
     inputDolares = document.getElementById("inputDolares").value = outputDolares.toFixed(2);
@@ -30,33 +31,6 @@ function cajaSelectoraDolarToPesos(){
 }
 
 
-function BuscarOfertas(){
+inputPesos.onchange = () =>{cajaSelectoraPesosToDolar()}
 
-    var valorFiltroPesos = cajaSelectoraDolarToPesos()
-    var valorFiltroDolares = cajaSelectoraPesosToDolar(); 
-
-    console.log("BUSCAR CON ↓")
-
-    console.log(valorFiltroPesos)
-    console.log(valorFiltroDolares)
-
-}
-
-
-function BotonSwap(){
-    var button = document.getElementById('cajaSelectora__botonSwitch'); // Assumes element with id='button'
-
-button.onclick = function() {
-    var div = document.getElementById('div__cajaSelectora');
-    if (div.style.display !== 'none') {
-        div.style.display = 'none';
-    }
-    else {
-        div.style.display = 'block';
-    }
-};
-}
-
-
-
-
+inputDolares.onchange = () => {cajaSelectoraDolarToPesos()} 

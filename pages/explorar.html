@@ -15,11 +15,12 @@
 
     <!-- Nuestro CSS -->
     <link rel="stylesheet" href="../assets/css/style.css">
-    
-    <title>Compra o Vende Saldo Paypal en Argentina Con Más de 9 Métodos de Pago</title>
-    <link  rel="icon" href="../assets/img/favicon.png" type="image/png" >
 
-    <meta name="description" content="LocalPP es un mercado de saldo Paypal de tipo persona a persona, con más de 9 metodos de pago, donde podras cambiar tus Pesos a Dólares en PayPal.☑️">
+    <title>Compra o Vende Saldo Paypal en Argentina Con Más de 9 Métodos de Pago</title>
+    <link rel="icon" href="../assets/img/favicon.png" type="image/png">
+
+    <meta name="description"
+        content="LocalPP es un mercado de saldo Paypal de tipo persona a persona, con más de 9 metodos de pago, donde podras cambiar tus Pesos a Dólares en PayPal.☑️">
 
 </head>
 
@@ -42,7 +43,8 @@
                     </li>
                     <li class="nav-item "><a class="nav-link" href="../pages/mis-intercambios.html">Mis
                             Intercambios(15)</a></li>
-                    <li class="nav-item "><a class="nav-link" href="../pages/error-404.html">Cartera (ARS$10.000) </a></li>
+                    <li class="nav-item "><a class="nav-link" href="../pages/error-404.html">Cartera (ARS$10.000) </a>
+                    </li>
                     <li class="nav-item "><a class="nav-link" href="../pages/perfil.html">🔔estebanhirzfeld </a></li>
                 </ul>
             </div>
@@ -53,7 +55,7 @@
         <div class="row">
             <div class="col-lg-3 col-md-12 col-sm-12 col-12 ">
 
-                <div  class="div__explorador--style animate__bounceIn">
+                <div class="div__explorador--style animate__bounceIn">
                     <div>
                         <form>
                             <input type="radio" name="comprarVender" value="comprar">
@@ -65,30 +67,34 @@
 
                     <div class="div__selector--style">
                         <legend>Saldo</legend>
-                        <select class="form-select form-select-lg mb-3 " aria-label=".form-select-lg example">
-                            <option value="1">Paypal</option>
+                        <select id="selectorPaypal" class="form-select form-select-lg mb-3 selectorPaypal"
+                            aria-label=".form-select-lg example">
+                            <option value="Paypal">Paypal</option>
                         </select>
                     </div>
 
                     <div class="div__selector--style">
                         <legend>Ubicacion</legend>
-                        <select class="form-select form-select-lg mb-3 " aria-label=".form-select-lg example">
-                            <option value="1">Zona Norte</option>
-                            <option value="2">Zona Sur</option>
-                            <option value="3">Zona Oeste</option>
+                        <select name="selectorUbicacion" id="selectorUbicacion"
+                            class="form-select form-select-lg mb-3 selectorUbicacion"
+                            aria-label=".form-select-lg example">
+                            <option value="Todos">Todos </option>
+                            <option value="Zona Norte">Zona Norte</option>
+                            <option value="Zona Sur">Zona Sur</option>
+                            <option value="Zona Oeste">Zona Oeste</option>
                         </select>
                     </div>
 
                     <div class="div__selector--style">
                         <legend>Metodo de Pago</legend>
-                        <select class="form-select form-select-lg mb-3 " aria-label=".form-select-lg example">
-                            <option value="1">Uala </option>
-                            <option value="2">bruBank </option>
-                            <option value="3">Transferencia </option>
-                            <option value="4">MercadoPago </option>
-                            <option value="5">CuentaDigital </option>
-
-
+                        <select name="selectorMetodoDePago" id="selectorMetodoDePago"
+                            class="form-select form-select-lg mb-3 " aria-label=".form-select-lg example">
+                            <option value="Todos">Todos </option>
+                            <option value="Ualá">Ualá </option>
+                            <option value="bruBank">bruBank </option>
+                            <option value="Transf. Bancaria">Transf. Bancaria </option>
+                            <option value="MercadoPago">MercadoPago </option>
+                            <option value="Cuenta Digital">CuentaDigital </option>
                         </select>
                     </div>
                 </div>
@@ -118,276 +124,15 @@
                 </div>
 
                 <div>
-                    <section>
-                        <table data-aos="fade-up" data-aos-duration="500" width="100%">
-                            <thead>
-                                <tr>
-                                    <th rowspan="3">burberry</th>
-                                    <th rowspan="3">Método</th>
-                                    <th rowspan="3">Argentina</th>
-                                    <th rowspan="2">ARS$58.500</th>
-                                </tr>
-                                <tr>
-                                </tr>
-                                <tr>
-                                    <td rowspan="2">30% por debajo del Mercado</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td rowspan="3">~375 trades</td>
-                                    <td rowspan="3">bruBannk</td>
-                                    <td rowspan="3">Zona Norte</td>
-                                </tr>
-                                <tr>
-                                    <td rowspan="2">
-                                        <form action="">
-                                            <!--  Boton Comprar -->
-                                            <input type="submit" value="Comprar" />
-                                        </form>
-                                    </td>
-                                </tr>
-                                <tr>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <section id="mejoresVendedores"> <!-- Incorporacion de nuevos usuarios desde JSON +  parametro mejorVendedor = true-->
 
-                        <table data-aos="fade-up" data-aos-duration="500" width="100%">
-                            <thead>
-                                <tr>
-                                    <th rowspan="3">orangejuice</th>
-                                    <th rowspan="3">Método</th>
-                                    <th rowspan="3">Argentina</th>
-                                    <th rowspan="2">ARS$22.000</th>
-                                </tr>
-                                <tr>
-                                </tr>
-                                <tr>
-                                    <td rowspan="2">15% por debajo del Mercado</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td rowspan="3">~2100 trades</td>
-                                    <td rowspan="3">Ualá</td>
-                                    <td rowspan="3">Zona Sur</td>
-                                </tr>
-                                <tr>
-                                    <td rowspan="2">
-                                        <form action="">
-                                            <!--  Boton Comprar -->
-                                            <input type="submit" value="Comprar" />
-                                        </form>
-                                    </td>
-                                </tr>
-                                <tr>
-                                </tr>
-                            </tbody>
-                        </table>
                     </section>
 
                 </div>
+
                 <div class="div__similares--style">
                     <h2>Ofertas Similares</h2> <br>
-                    <section>
-
-                        <table data-aos="fade-up" data-aos-duration="500" width="100%">
-                            <thead>
-                                <tr>
-                                    <th rowspan="3">flycoffee</th>
-                                    <th rowspan="3">Método</th>
-                                    <th rowspan="3">Argentina</th>
-                                    <th rowspan="2">ARS$33.200</th>
-                                </tr>
-                                <tr>
-                                </tr>
-                                <tr>
-                                    <td rowspan="2">10% por debajo del Mercado</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td rowspan="3">~8700 trades</td>
-                                    <td rowspan="3">Ualá</td>
-                                    <td rowspan="3">Zona Norte</td>
-                                </tr>
-                                <tr>
-                                    <td rowspan="2">
-                                        <form action="">
-                                            <!--  Boton Comprar -->
-                                            <input type="submit" value="Comprar" />
-                                        </form>
-                                    </td>
-                                </tr>
-                                <tr>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <table data-aos="fade-up" data-aos-duration="500" width="100%">
-                            <thead>
-                                <tr>
-                                    <th rowspan="3">Clarinet</th>
-                                    <th rowspan="3">Método</th>
-                                    <th rowspan="3">Argentina</th>
-                                    <th rowspan="2">ARS$60.500</th>
-                                </tr>
-                                <tr>
-                                </tr>
-                                <tr>
-                                    <td rowspan="2">10% por debajo del Mercado</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td rowspan="3">~400 trades</td>
-                                    <td rowspan="3">Transf. Bancaria</td>
-                                    <td rowspan="3">Zona Norte</td>
-                                </tr>
-                                <tr>
-                                    <td rowspan="2">
-                                        <form action="">
-                                            <!--  Boton Comprar -->
-                                            <input type="submit" value="Comprar" />
-                                        </form>
-                                    </td>
-                                </tr>
-                                <tr>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <table data-aos="fade-up" data-aos-duration="500" width="100%">
-                            <thead>
-                                <tr>
-                                    <th rowspan="3">Milkyway1</th>
-                                    <th rowspan="3">Método</th>
-                                    <th rowspan="3">Argentina</th>
-                                    <th rowspan="2">ARS$31.700</th>
-                                </tr>
-                                <tr>
-                                </tr>
-                                <tr>
-                                    <td rowspan="2">8% por debajo del Mercado</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td rowspan="3">~3500 trades</td>
-                                    <td rowspan="3">Transf. Bancaria</td>
-                                    <td rowspan="3">Zona Oeste</td>
-                                </tr>
-                                <tr>
-                                    <td rowspan="2">
-                                        <form action="">
-                                            <!--  Boton Comprar -->
-                                            <input type="submit" value="Comprar" />
-                                        </form>
-                                    </td>
-                                </tr>
-                                <tr>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <table data-aos="fade-up" data-aos-duration="500" width="100%">
-                            <thead>
-                                <tr>
-                                    <th rowspan="3">highmoon</th>
-                                    <th rowspan="3">Método</th>
-                                    <th rowspan="3">Argentina</th>
-                                    <th rowspan="2">ARS$11.100</th>
-                                </tr>
-                                <tr>
-                                </tr>
-                                <tr>
-                                    <td rowspan="2">11% por debajo del Mercado</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td rowspan="3">~1900 trades</td>
-                                    <td rowspan="3">MercadoPago</td>
-                                    <td rowspan="3">Zona Norte</td>
-                                </tr>
-                                <tr>
-                                    <td rowspan="2">
-                                        <form action="">
-                                            <!--  Boton Comprar -->
-                                            <input type="submit" value="Comprar" />
-                                        </form>
-                                    </td>
-                                </tr>
-                                <tr>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <table data-aos="fade-up" data-aos-duration="500" width="100%">
-                            <thead>
-                                <tr>
-                                    <th rowspan="3">burberry</th>
-                                    <th rowspan="3">Método</th>
-                                    <th rowspan="3">Argentina</th>
-                                    <th rowspan="2">ARS$58.500</th>
-                                </tr>
-                                <tr>
-                                </tr>
-                                <tr>
-                                    <td rowspan="2">30% por debajo del Mercado</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td rowspan="3">~375 trades</td>
-                                    <td rowspan="3">bruBannk</td>
-                                    <td rowspan="3">Zona Norte</td>
-                                </tr>
-                                <tr>
-                                    <td rowspan="2">
-                                        <form action="">
-                                            <!--  Boton Comprar -->
-                                            <input type="submit" value="Comprar" />
-                                        </form>
-                                    </td>
-                                </tr>
-                                <tr>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <table data-aos="fade-up" data-aos-duration="500" width="100%">
-                            <thead>
-                                <tr>
-                                    <th rowspan="3">burberry</th>
-                                    <th rowspan="3">Método</th>
-                                    <th rowspan="3">Argentina</th>
-                                    <th rowspan="2">ARS$58.500</th>
-                                </tr>
-                                <tr>
-                                </tr>
-                                <tr>
-                                    <td rowspan="2">30% por debajo del Mercado</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td rowspan="3">~375 trades</td>
-                                    <td rowspan="3">bruBannk</td>
-                                    <td rowspan="3">Zona Norte</td>
-                                </tr>
-                                <tr>
-                                    <td rowspan="2">
-                                        <form action="">
-                                            <!--  Boton Comprar -->
-                                            <input type="submit" value="Comprar" />
-                                        </form>
-                                    </td>
-                                </tr>
-                                <tr>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <section id="ofertaSimiliares"> <!-- Incorporacion de nuevos usuarios desde JSON-->
 
                     </section>
 
@@ -446,28 +191,27 @@
         </div>
     </footer>
 
-    
+
     <!-- Script de AOS Animate -->
-    
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
-        </script>
+    </script>
 
 
-<!-- Script de Iconos -->
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <!-- Script de Iconos -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 
-<!-- Script de Jquery -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-        
-        <!-- Script de Bootstrap -->
-        <script src="../assets/js/bootstrap.bundle.min.js"></script>
-        
-        <!-- Script de Javascript-->
-        <script src="/javascript/explorar-page.js"></script>
+    <!-- Script de Jquery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <!-- Script de Bootstrap -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script de Javascript-->
+    <!-- <script src="/javascript/explorar-page.js"></script> -->
+    <script src="/javascript/explorar-usuarios.js"></script>
 </body>
 
 </html>

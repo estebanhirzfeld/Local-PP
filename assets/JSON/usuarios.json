@@ -1,0 +1,65 @@
+[
+    {
+        "nombre": "burberry",
+        "trades": "375",
+        "metodo": "bruBank",
+        "localidad": "Zona Norte",
+        "monto": "58.500",
+        "porcentaje": "30",
+        "mejorVendedor": true
+    },
+    {
+        "nombre": "orangejuice",
+        "trades": "2100",
+        "metodo": "Ualá",
+        "localidad": "Zona Sur",
+        "monto": "22.000",
+        "porcentaje": "15",
+        "mejorVendedor": true
+    },
+    {
+        "nombre": "flycoffee",
+        "trades": "8700",
+        "metodo": "Ualá",
+        "localidad": "Zona Norte",
+        "monto": "33.200",
+        "porcentaje": "10",
+        "mejorVendedor": false
+    },
+    {
+        "nombre": "Clarinet",
+        "trades": "400",
+        "metodo": "Transf. Bancaria",
+        "localidad": "Zona Oeste",
+        "monto": "31.700",
+        "porcentaje": "8",
+        "mejorVendedor": false
+    },
+    {
+        "nombre": "highmoon",
+        "trades": "1900",
+        "metodo": "MercadoPago",
+        "localidad": "Zona Norte",
+        "monto": "11.100",
+        "porcentaje": "11",
+        "mejorVendedor": false
+    },
+    {
+        "nombre": "burberry",
+        "trades": "375",
+        "metodo": "bruBank",
+        "localidad": "Zona Norte",
+        "monto": "58.500",
+        "porcentaje": "30",
+        "mejorVendedor": false
+    },
+    {
+        "nombre": "burberry",
+        "trades": "375",
+        "metodo": "bruBank",
+        "localidad": "Zona Norte",
+        "monto": "58.500",
+        "porcentaje": "30",
+        "mejorVendedor": false
+    }
+]
