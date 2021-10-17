@@ -74,12 +74,13 @@
 
                             <!-- ARS -->
                             <div class="div__cajaSup--responsive div__cajaSup--style">
-                                <span class="col-lg-12 d-flex position-absolute cajaSelectora__customPlaceholder">Ud.
+                                <span class="col-lg-12 d-flex position-absolute cajaSelectora__customPlaceholder"
+                                    id="customPlaceholderARS">Ud.
                                     Envia
                                     ARS</span>
-                                <input type="number"
-                                    class="cajaSelectora__input--style" id="inputPesos"> <!-- primera mitad -->
-                                <select name="" class="cajaSelectora__selectora--style">
+                                <input type="number" class="cajaSelectora__input--style" id="inputPesos">
+                                <!-- primera mitad -->
+                                <select name="" class="cajaSelectora__selectora--style" id="selectorSuperior">
                                     <!-- segunda mitad -->
                                     <option value="1">Uala </option>
                                     <option value="2">bruBank </option>
@@ -92,8 +93,8 @@
                             <!-- SWAP -->
                             <div
                                 class=" col-lg-12 d-flex justify-content-center position-absolute cajaSelectora__botonSwitch--responsive">
-                                <button onclick="BotonSwap()" data-aos="zoom-in" data-aos-duration="400"
-                                    class="cajaSelectora__botonSwitch cajaSelectora__botonSwitch--style" id="cajaSelectora__botonSwap">
+                                <button data-aos="zoom-in" data-aos-duration="400"
+                                    class="cajaSelectora__botonSwitch cajaSelectora__botonSwitch--style" id="botonSwap">
                                     <span>
                                         <ion-icon name="repeat-outline"></ion-icon>
                                     </span>
@@ -103,11 +104,12 @@
                             <!-- USD -->
 
                             <div class="div__cajaInf--responsive div__cajaInf--style">
-                                <span class="col-lg-12 d-flex position-absolute cajaSelectora__customPlaceholder">Ud.
+                                <span class="col-lg-12 d-flex position-absolute cajaSelectora__customPlaceholder"
+                                    id="customPlaceholderUSD">Ud.
                                     Recibe USD</span>
-                                <input type="number" name=""
-                                    class="cajaSelectora__input--style" id="inputDolares"> <!-- primera mitad -->
-                                <select name="" class="cajaSelectora__selectora--style">
+                                <input type="number" name="" class="cajaSelectora__input--style" id="inputDolares">
+                                <!-- primera mitad -->
+                                <select name="" class="cajaSelectora__selectora--style" id="selectorInferior">
                                     <!-- segunda mitad -->
                                     <option value="1">PayPal</option>
                                 </select>

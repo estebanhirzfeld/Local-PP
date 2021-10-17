@@ -45,21 +45,21 @@
         "mejorVendedor": false
     },
     {
-        "nombre": "burberry",
-        "trades": "375",
+        "nombre": "pepper",
+        "trades": "200",
         "metodo": "bruBank",
         "localidad": "Zona Norte",
-        "monto": "58.500",
-        "porcentaje": "30",
+        "monto": "70.500",
+        "porcentaje": "20",
         "mejorVendedor": false
     },
     {
-        "nombre": "burberry",
-        "trades": "375",
+        "nombre": "bucket",
+        "trades": "125",
         "metodo": "bruBank",
         "localidad": "Zona Norte",
-        "monto": "58.500",
-        "porcentaje": "30",
+        "monto": "55.000",
+        "porcentaje": "28",
         "mejorVendedor": false
     }
 ]

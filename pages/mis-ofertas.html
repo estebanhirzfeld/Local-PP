@@ -9,6 +9,9 @@
     <link rel="stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <!-- Toast CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
@@ -16,7 +19,7 @@
     <!-- Nuestro CSS -->
     <link rel="stylesheet" href="../assets/css/style.css">
 
-    <link  rel="icon" href="../assets/img/favicon.png" type="image/png" >
+    <link rel="icon" href="../assets/img/favicon.png" type="image/png">
 
     <title>Mis Ofertas - LocalPP</title>
 </head>
@@ -38,8 +41,10 @@
                     <li class="nav-item "><a class="nav-link" href="../pages/explorar.html">🔍Explorar </a></li>
                     <li class="nav-item active"><a class="nav-link" href="../pages/mis-ofertas.html">Mis Ofertas(1) </a>
                     </li>
-                    <li class="nav-item "><a class="nav-link" href="../pages/mis-intercambios.html">Mis Intercambios(15)</a></li>
-                    <li class="nav-item "><a class="nav-link" href="../pages/error-404.html">Cartera (ARS$10.000) </a></li>
+                    <li class="nav-item "><a class="nav-link" href="../pages/mis-intercambios.html">Mis
+                            Intercambios(15)</a></li>
+                    <li class="nav-item "><a class="nav-link" href="../pages/error-404.html">Cartera (ARS$10.000) </a>
+                    </li>
                     <li class="nav-item "><a class="nav-link" href="../pages/perfil.html">🔔estebanhirzfeld </a></li>
                 </ul>
             </div>
@@ -50,13 +55,12 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-xs-12">
-                <h1 data-aos="fade-up"
-                data-aos-duration="500" class="col-lg-12 col-12 d-flex justify-content-center misOfertas__titulo">Mis Ofertas</h1>
+                <h1 data-aos="fade-up" data-aos-duration="500"
+                    class="col-lg-12 col-12 d-flex justify-content-center misOfertas__titulo">Mis Ofertas</h1>
             </div>
 
             <div class="col-lg-12 col-xs-12">
-                <table data-aos="fade-up"
-                data-aos-duration="500" class="col-lg-12 misOfertasDesktop">
+                <table data-aos="fade-up" data-aos-duration="500" class="col-lg-12 misOfertasDesktop">
                     <tr>
                         <th>Tipo </th>
                         <th>Metodo de Pago </th>
@@ -72,15 +76,14 @@
                         <td>20.000 </td>
                         <td>
                             <li><a href=""> 👁 Ver</a></li>
-                            <li><a href=""> ⏸ Pausar</a></li>
+                            <li id="botonPausar"> ⏸ Pausar</li>
                             <li><a href=""> 📄 Duplicar</a></li>
                             <li><a href=""> ✏ Editar</a></li>
                         </td>
                     </tr>
                 </table>
 
-                <table data-aos="fade-up"
-                data-aos-duration="500" class="col-lg-12 misOfertasMobile">
+                <table data-aos="fade-up" data-aos-duration="500" class="col-lg-12 misOfertasMobile">
                     <tr>
                         <th>Tipo </th>
                         <th>Metodo</th>
@@ -105,7 +108,8 @@
             </div>
 
             <div class="col-lg-12 col-xs-12 d-flex justify-content-end">
-                <button data-aos="zoom-in" data-aos-duration="600" class="boton__crearNuevaOferta "type="button"> 
+                <button data-aos="zoom-in" data-aos-duration="600" class="boton__crearNuevaOferta" type="button"
+                    id="botonCrearNuevaOferta" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
                     <span>Crear Nueva Oferta</span>
                 </button>
             </div>
@@ -113,6 +117,35 @@
         </div>
     </div>
 
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Recipient:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send message</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -176,14 +209,18 @@
 
     <!-- Script de Iconos -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-
+    
     <!-- Script de Jquery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    
+    <!-- Script de Toast -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 
     <!-- Script de Bootstrap -->
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script de Javascript-->
+    <script src="/javascript/mis-ofertas.js"></script>
 </body>
 
 </html>
