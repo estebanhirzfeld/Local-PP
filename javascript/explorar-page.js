@@ -1,43 +1,45 @@
+'use strict';
+
 const URLJSON = "/assets/JSON/usuarios.json"
 
 let ubicacion;
 let metodo;
 
 $('#selectorUbicacion').click(function () {
-    ubicacion = $("#selectorUbicacion").val();
-    metodo = $("#selectorMetodoDePago").val();
+    ubicacion = $("#selectorUbicacion").val();  // Lectura de Values en Selects Ubicacion
+    metodo = $("#selectorMetodoDePago").val();  // Lectura de Values en Selects Metodo
 
     mostrarUsuarios()
 });
 
 $('#selectorMetodoDePago').click(function () {
-    ubicacion = $("#selectorUbicacion").val();
-    metodo = $("#selectorMetodoDePago").val();
+    ubicacion = $("#selectorUbicacion").val();  // Lectura de Values en Selects Ubicacion
+    metodo = $("#selectorMetodoDePago").val();  // Lectura de Values en Selects Metodo
 
-    mostrarUsuarios()
+    mostrarUsuarios() 
 });
 
 function mostrarUsuarios() {
     $.getJSON(URLJSON, function (respuesta, estado) {
         if (estado == "success") {
-            let misUsuarios = respuesta;
+            let misUsuarios = respuesta;                    //Finalizada la request del JSON
 
 
             var usuarios = misUsuarios
                 .filter(function (usuario) {
                     return usuario.localidad === ubicacion || ubicacion === "Todos";
-                })
+                })                                                                   //Filter para la Ubicacion seleccionada o Todos
 
                 .filter(function (usuario) {
                     return usuario.metodo === metodo || metodo === "Todos";
-                })
+                })                                                                   //Filter para el Metodo seleccionado o Todos
 
-            console.table(usuarios)
+            console.table(usuarios)                                                  // Lectura en Consola
 
-            $("#mejoresVendedores").empty()
-            $("#ofertaSimiliares").empty()
+            $("#mejoresVendedores").empty()                              //Limpieza de appends para evitar ofertas repetidas             
+            $("#ofertaSimiliares").empty()                               //Limpieza de appends para evitar ofertas repetidas
 
-            for (const usuario of usuarios) {
+            for (const usuario of usuarios) {                           // for of Para el Append de las ofertas que cumplan las condiciones
                 if (usuario.mejorVendedor == true) {
                     $("#mejoresVendedores").append(
                         `<table class="tablaOferta" data-aos="fade-up" data-aos-duration="500" width="100%">
