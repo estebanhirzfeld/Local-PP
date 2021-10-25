@@ -3,27 +3,42 @@ const URLJSON = "/assets/JSON/usuarios.json"
 let ubicacion;
 let metodo;
 
-$('#selectorUbicacion').click(function(){
+$('#selectorUbicacion').click(function () {
     ubicacion = $("#selectorUbicacion").val();
     metodo = $("#selectorMetodoDePago").val();
 
     mostrarUsuarios()
 });
 
-$('#selectorMetodoDePago').click(function(){
+$('#selectorMetodoDePago').click(function () {
     ubicacion = $("#selectorUbicacion").val();
     metodo = $("#selectorMetodoDePago").val();
 
     mostrarUsuarios()
 });
 
-function mostrarUsuarios(){
+function mostrarUsuarios() {
     $.getJSON(URLJSON, function (respuesta, estado) {
         if (estado == "success") {
             let misUsuarios = respuesta;
-            for (const usuario of misUsuarios) {
-                if ((usuario.mejorVendedor == true)&&(usuario.localidad == ubicacion)&&(usuario.metodo == metodo)) {
-    
+
+
+            var usuarios = misUsuarios
+                .filter(function (usuario) {
+                    return usuario.localidad === ubicacion || ubicacion === "Todos";
+                })
+
+                .filter(function (usuario) {
+                    return usuario.metodo === metodo || metodo === "Todos";
+                })
+
+            console.table(usuarios)
+
+            $("#mejoresVendedores").empty()
+            $("#ofertaSimiliares").empty()
+
+            for (const usuario of usuarios) {
+                if (usuario.mejorVendedor == true) {
                     $("#mejoresVendedores").append(
                         `<table class="tablaOferta" data-aos="fade-up" data-aos-duration="500" width="100%">
                         <thead>
@@ -57,7 +72,8 @@ function mostrarUsuarios(){
                             </tr>
                         </tbody>
                         </table>`);
-                }else if ((usuario.mejorVendedor == false)&&(usuario.localidad == ubicacion)&&(usuario.metodo == metodo)){
+                }
+                else if (usuario.mejorVendedor == false) {
                     $("#ofertaSimiliares").append(
                         `<table class="tablaOferta" data-aos="fade-up" data-aos-duration="500" width="100%">
                         <thead>

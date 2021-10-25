@@ -20,9 +20,6 @@ body::-webkit-scrollbar-thumb:hover {
 .disabled {
   color: #919191; }
 
-#botonPausar {                  /* Without SASS */
-  cursor:pointer; }
-
 a:link {
   color: white; }
 
