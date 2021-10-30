@@ -1,35 +1,34 @@
-let toggle = false;
-const URLGET = "/assets/JSON/usuarios.json"
+const URLJSON = "/assets/JSON/usuarios.json"
 
+// Toastify
 
-const nuevaOferta = {
-    "nombre": "estebanhirzfeld",
-    "trades": "111",
-    "metodo": "bruBank",
-    "localidad": "Zona Sur",
-    "monto": "35.500",
-    "porcentaje": "15",
-    "mejorVendedor": true
-}
+let nuevaOferta = [];
 
-$("#botonPausar").click(function () {
-    toggle = !toggle;
-    if (toggle == false) {
-        $("#botonPausar").text("▶️ Reanudar");
+$(".boton__crearNuevaOferta").click(function () {
 
-
-
-    } else {
-
-        $.post(URLGET, nuevaOferta, function (respuesta, estado) {
-            if (estado == "success") {
-                $("#botonPausar").text("⏸ Pausar");
-                toastr.success("Puedes verla en la sección Explorar🔍", "Oferta Reanudada!")
-            }
-        });
-
+    nuevaOferta ={
+        "nombre": "estebanhirzfeld",
+        "trades": "111",
+        "metodo": "Transf. Bancaria",
+        "localidad": "Zona Sur",
+        "monto": "11.000",
+        "porcentaje": "11",
+        "mejorVendedor": true
     }
 
-})
+    $.getJSON(URLJSON, function (respuesta, estado) {
+        if (estado == "success") {
+            let ofertas = respuesta;    
+            
+            ofertas.push(nuevaOferta);
+            
+            ofertas = JSON.stringify(ofertas);
 
+            // var fs = require('fs');
+            // fs.writeFile('/assets/JSON/usuarios.json', ofertas, 'utf8', callback);
+
+            console.log(ofertas);
+        }
+});
+});
 
