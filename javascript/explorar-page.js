@@ -23,7 +23,9 @@ function mostrarUsuarios() {
     $.getJSON(URLJSON, function (respuesta, estado) {
         if (estado == "success") {
             let misUsuarios = respuesta;                    //Finalizada la request del JSON
-
+            let nuevasOfertas = sessionStorage.getItem("nuevaOferta")
+            nuevasOfertas = JSON.parse(nuevasOfertas);
+            misUsuarios.push(nuevasOfertas);
 
             var usuarios = misUsuarios
                 .filter(function (usuario) {
@@ -120,6 +122,9 @@ function mostrarUsuarios() {
 $.getJSON(URLJSON, function (respuesta, estado) {
     if (estado == "success") {
         let misUsuarios = respuesta;
+        let nuevasOfertas = sessionStorage.getItem("nuevaOferta")
+        nuevasOfertas = JSON.parse(nuevasOfertas);
+        misUsuarios.push(nuevasOfertas);
         for (const usuario of misUsuarios) {
             if (usuario.mejorVendedor == true) {
 

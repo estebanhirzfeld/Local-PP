@@ -5,8 +5,7 @@ const URLJSON = "/assets/JSON/usuarios.json"
 let nuevaOferta = [];
 
 $(".boton__crearNuevaOferta").click(function () {
-
-    nuevaOferta ={
+    nuevaOferta = {
         "nombre": "estebanhirzfeld",
         "trades": "111",
         "metodo": "Transf. Bancaria",
@@ -16,19 +15,12 @@ $(".boton__crearNuevaOferta").click(function () {
         "mejorVendedor": true
     }
 
-    $.getJSON(URLJSON, function (respuesta, estado) {
-        if (estado == "success") {
-            let ofertas = respuesta;    
-            
-            ofertas.push(nuevaOferta);
-            
-            ofertas = JSON.stringify(ofertas);
-
-            // var fs = require('fs');
-            // fs.writeFile('/assets/JSON/usuarios.json', ofertas, 'utf8', callback);
-
-            console.log(ofertas);
-        }
+    sessionStorage.setItem("nuevaOferta", JSON.stringify(nuevaOferta))
+    console.log("Nueva Oferta Creada!")
 });
-});
+
+
+
+// fs.writeFile('/assets/JSON/usuarios.json', ofertas, 'utf8', callback);
+// var fs = require('fs');
 
