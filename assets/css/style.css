@@ -185,6 +185,15 @@ table {
   .boton__crearNuevaOferta:active {
     background: #b3b3b3; }
 
+.custom-select-mis-ofertas {
+  width: 150px; }
+
+.misOfertasDesktop tr td li, .misOfertasMobile tr td li {
+  cursor: pointer; }
+
+.misOfertasDesktop tr td li:hover, .misOfertasMobile tr td li:hover {
+  background-color: rgba(35, 17, 35, 0.401); }
+
 .misIntercambios__titulos {
   color: white;
   text-align: center; }
