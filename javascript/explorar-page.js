@@ -2,7 +2,6 @@
 
 const URLJSON = "/assets/JSON/usuarios.json"
 
-
 let ubicacion;
 let metodo;
 
@@ -24,9 +23,12 @@ function mostrarUsuarios() {
     $.getJSON(URLJSON, function (respuesta, estado) {
         if (estado == "success") {
             let misUsuarios = respuesta;                    //Finalizada la request del JSON
-            let nuevasOfertas = sessionStorage.getItem("nuevaOferta")
-            nuevasOfertas = JSON.parse(nuevasOfertas);
-            misUsuarios.push(nuevasOfertas);
+            
+            if(sessionStorage.getItem("nuevaOferta") != undefined){      //Sin este if y sin la oferta creada en mis Ofertas, el filtro no funciona
+                let nuevasOfertas = sessionStorage.getItem("nuevaOferta")
+                nuevasOfertas = JSON.parse(nuevasOfertas);
+                misUsuarios.push(nuevasOfertas);
+            }
 
             var usuarios = misUsuarios
                 .filter(function (usuario) {
