@@ -2,6 +2,7 @@
 
 const URLJSON = "/assets/JSON/usuarios.json"
 
+
 let ubicacion;
 let metodo;
 

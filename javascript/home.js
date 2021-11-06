@@ -1,36 +1,36 @@
 function cajaSelectoraPesosToDolar() {
 
-    let inputPesos = document.getElementById("inputPesos").value;
+    let inputPesos = $("#inputPesos").val();
 
     let outputDolares = (inputPesos / 131) - ((inputPesos / 131) / 100) * 6;
 
-    inputDolares = document.getElementById("inputDolares").value = outputDolares.toFixed(2);
+    inputDolares = outputDolares.toFixed(2);
+    // inputDolares = $("#inputDolares").val() = outputDolares.toFixed(2);
+    
 
-    if (inputDolares < 0) { inputPesos = document.getElementById("inputPesos").value = 0; }
-    if (inputDolares < 0) { inputDolares = document.getElementById("inputDolares").value = 0; }
+    if (inputDolares < 0) { inputPesos = $("#inputPesos").val() = 0; }
+    if (inputDolares < 0) { inputDolares = $("#inputDolares").val() = 0; }
 
     return inputDolares;
 }
 
 function cajaSelectoraDolarToPesos() {
-    let inputDolares = document.getElementById("inputDolares").value;
+    let inputDolares = $("#inputDolares").val();
 
     let outputPesos = (inputDolares - (inputDolares / 100) * 6) * 120;
 
-    inputPesos = document.getElementById("inputPesos").value = outputPesos.toFixed(2);
+    inputPesos = outputPesos.toFixed(2);
+    // inputPesos = $("#inputPesos").val() = outputPesos.toFixed(2);
 
-    if (inputDolares < 0) { inputPesos = document.getElementById("inputPesos").value = 0; }
-    if (inputDolares < 0) { inputDolares = document.getElementById("inputDolares").value = 0; }
+    if (inputDolares < 0) { inputPesos = $("#inputPesos").val() = 0; }
+    if (inputDolares < 0) { inputDolares = $("#inputDolares").val() = 0; }
 
     return inputPesos;
 }
 
+$("#inputPesos").change(function(){ cajaSelectoraPesosToDolar()})
 
-inputPesos.onchange = () => { cajaSelectoraPesosToDolar() }
-
-inputDolares.onchange = () => { cajaSelectoraDolarToPesos() }
-
-
+$("#inputDolares").change(function(){ cajaSelectoraPesosToDolar()})
 
 let toggle = false;
 
@@ -39,8 +39,6 @@ $("#botonSwap").click(function () {
     if (toggle == false) {
         $("#customPlaceholderARS").text("Ud. Recibe USD");
         $("#customPlaceholderUSD").text("Ud. Envia ARS");
-
-        
 
 
     } else {
