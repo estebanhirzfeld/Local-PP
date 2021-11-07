@@ -140,15 +140,33 @@ function EditarOferta() {
                     </tr>
     
                     <tr>
-                        <td>PP to ARS </td>
-                        <td>Ualá </td>
-                        <td>Zona Sur </td>
-                        <td>20.000 </td>
                         <td>
-                            <li><a href="">👁 Ver</a></li>
-                            <li><a href="">⏸ Pausar</a></li>
-                            <li><a href="">📄 Duplicar</a></li>
-                            <li class="boton__editarOferta"> ✏ Editar</li>
+                            <select class="custom-select custom-select-mis-ofertas text-center" id="selectTipo">
+                                <option value="Paypal to ARS">Paypal to ARS</option>
+                                <option value="ARS to Paypal">ARS to Paypal</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="custom-select custom-select-mis-ofertas text-center" id="selectMetodo">
+                                <option value="Uala">Uala</option>
+                                <option value="bruBank">bruBank</option>
+                                <option value="Transferencia">Transferencia</option>
+                                <option value="MercadoPago">MercadoPago</option>
+                                <option value="CuentaDigital">CuentaDigital</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="custom-select custom-select-mis-ofertas text-center" id="selectUbicacion">
+                                <option value="Zona Norte">Zona Norte</option>
+                                <option value="Zona Sur">Zona Sur</option>
+                                <option value="Zona Oeste">Zona Oeste</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input class="text-center" type="number" placeholder="20.000" id="selectMonto">
+                        </td>
+                        <td>
+                            <button class="cajaSelectora__botonBuscarOfertas--style my-4 botonGuardarCambios"><span>Guardar</span></button>
                         </td>
                     </tr>
                 </table>
