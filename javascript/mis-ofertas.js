@@ -170,15 +170,27 @@ function LecturaDeValores() {
     montoValue = $("#selectMonto").val();
 }
 
+function VerificacionDeCampos(){
+    montoValue = parseFloat(montoValue)
+    if((montoValue <= 0)||(!montoValue)){
+        alert("Revise Los Campos Ingresados")
+        return false;
+    }else{
+        return true;
+    }
+}
+
 function GuardarCambios() { 
     $(".botonGuardarCambios").click(function () {
 
         LecturaDeValores();
-        UpdateLs();
-        $(".contenedorTablas").empty();
-        GetLsAndAppend();
-        SubidaDeOfertaNueva();
-
+        VerificacionDeCampos();
+        if (VerificacionDeCampos() == true){
+            UpdateLs();
+            $(".contenedorTablas").empty();
+            GetLsAndAppend();
+            SubidaDeOfertaNueva();
+        }
     })
 }
 
