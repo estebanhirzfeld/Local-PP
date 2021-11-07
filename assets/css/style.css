@@ -167,6 +167,10 @@ table {
     table tbody input:active {
       background: #b3b3b3; }
 
+.custom-input-mis-ofertas {
+  outline: none;
+  border: none; }
+
 .misOfertas__titulo {
   color: white;
   text-align: center; }
@@ -184,9 +188,6 @@ table {
     background: #d9d9d9; }
   .boton__crearNuevaOferta:active {
     background: #b3b3b3; }
-
-.custom-select-mis-ofertas {
-  width: 150px; }
 
 .misOfertasDesktop tr td li, .misOfertasMobile tr td li {
   cursor: pointer; }
@@ -345,6 +346,12 @@ table {
 .div__similares--style {
   margin-top: 30px; }
 
+.custom-select-mis-ofertas {
+  width: 150px; }
+
+.custom-input-mis-ofertas {
+  width: 90px; }
+
 .boton__crearNuevaOferta {
   margin-top: 15px;
   margin-bottom: 130px;
@@ -460,6 +467,10 @@ nav li a:hover {
     text-align: center;
     align-content: center;
     justify-content: center; }
+  .custom-select-mis-ofertas {
+    width: 76px; }
+  .custom-input-mis-ofertas {
+    width: 76px; }
   .misOfertasDesktop li, .misOfertasMobile li {
     text-align: start; }
   .misOfertasDesktop {
@@ -510,6 +521,10 @@ nav li a:hover {
     text-align: center;
     align-content: center;
     justify-content: center; }
+  .custom-select-mis-ofertas {
+    width: 90px; }
+  .custom-input-mis-ofertas {
+    width: 90px; }
   .misOfertasDesktop li, .misOfertasMobile li {
     text-align: start; }
   .misOfertasDesktop {
@@ -542,6 +557,10 @@ nav li a:hover {
     text-align: center;
     align-content: center;
     justify-content: center; }
+  .custom-select-mis-ofertas {
+    width: 120px; }
+  .custom-input-mis-ofertas {
+    width: 90px; }
   .tablaMobile {
     display: none; }
   .misOfertasMobile {

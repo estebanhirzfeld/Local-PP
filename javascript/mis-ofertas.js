@@ -163,7 +163,7 @@ function EditarOferta() {
                             </select>
                         </td>
                         <td>
-                            <input class="text-center" type="number" placeholder="20.000" id="selectMonto">
+                            <input class="text-center custom-input-mis-ofertas" type="number" placeholder="20.000" id="selectMonto">
                         </td>
                         <td>
                             <button class="cajaSelectora__botonBuscarOfertas--style my-4 botonGuardarCambios"><span>Guardar</span></button>

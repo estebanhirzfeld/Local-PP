@@ -236,6 +236,10 @@ table{
 
 // MIS OFERTAS PAGE
 
+.custom-input-mis-ofertas{
+    outline:none;
+    border:none;
+}
 
 .misOfertas__titulo{
     color: white;
@@ -255,9 +259,7 @@ table{
 
 }
 
-.custom-select-mis-ofertas{
-    width:150px;
-}
+
 
 .misOfertasDesktop tr td li,.misOfertasMobile tr td li{
     cursor:pointer;

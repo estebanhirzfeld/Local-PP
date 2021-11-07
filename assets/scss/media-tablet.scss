@@ -8,9 +8,16 @@
         align-content:center;
         justify-content: center;
     }
-    
 
-    
+    /// MIS OFERTAS PAGE //////////////////////////////////////////////////
+
+    .custom-select-mis-ofertas{
+        width:120px;
+    }
+    .custom-input-mis-ofertas{
+        width:90px;
+    }
+
     /// MIS INTERCAMBIOS PAGE //////////////////////////////////////////////////
     .tablaMobile{
         display:none;
@@ -53,7 +60,12 @@
 
 // LANDSCAPE
 
+
+
+
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    
         /// USUARIO PAGE //////////////////////////////////////////////////
     .usuario__insignia{
         justify-content: center;
