@@ -4,7 +4,7 @@
         "trades": "375",
         "metodo": "bruBank",
         "localidad": "Zona Norte",
-        "monto": "58.500",
+        "monto": 58500,
         "porcentaje": "30",
         "mejorVendedor": true
     },
@@ -13,7 +13,7 @@
         "trades": "2100",
         "metodo": "Ualá",
         "localidad": "Zona Sur",
-        "monto": "22.000",
+        "monto": 22000,
         "porcentaje": "15",
         "mejorVendedor": true
     },
@@ -22,7 +22,7 @@
         "trades": "8700",
         "metodo": "Ualá",
         "localidad": "Zona Norte",
-        "monto": "33.200",
+        "monto": 33200,
         "porcentaje": "10",
         "mejorVendedor": false
     },
@@ -31,7 +31,7 @@
         "trades": "400",
         "metodo": "Transf. Bancaria",
         "localidad": "Zona Oeste",
-        "monto": "31.700",
+        "monto": 31700,
         "porcentaje": "8",
         "mejorVendedor": false
     },
@@ -40,7 +40,7 @@
         "trades": "1900",
         "metodo": "MercadoPago",
         "localidad": "Zona Norte",
-        "monto": "11.100",
+        "monto": 11100,
         "porcentaje": "11",
         "mejorVendedor": false
     },
@@ -49,7 +49,7 @@
         "trades": "200",
         "metodo": "bruBank",
         "localidad": "Zona Norte",
-        "monto": "70.500",
+        "monto": 70500,
         "porcentaje": "20",
         "mejorVendedor": false
     },
@@ -58,7 +58,7 @@
         "trades": "125",
         "metodo": "bruBank",
         "localidad": "Zona Norte",
-        "monto": "55.000",
+        "monto": 55000,
         "porcentaje": "28",
         "mejorVendedor": false
     }

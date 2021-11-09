@@ -4,18 +4,26 @@ const URLJSON = "/assets/JSON/usuarios.json"
 
 let ubicacion;
 let metodo;
+let monto;
 
 $('#selectorUbicacion').click(function () {
     ubicacion = $("#selectorUbicacion").val();  // Lectura de Values en Selects Ubicacion
     metodo = $("#selectorMetodoDePago").val();  // Lectura de Values en Selects Metodo
-
+    monto = $("#inputMonto").val();
     mostrarUsuarios()
 });
 
 $('#selectorMetodoDePago').click(function () {
     ubicacion = $("#selectorUbicacion").val();  // Lectura de Values en Selects Ubicacion
     metodo = $("#selectorMetodoDePago").val();  // Lectura de Values en Selects Metodo
+    monto = $("#inputMonto").val();
+    mostrarUsuarios()
+});
 
+$('#inputMonto').change(function () {
+    ubicacion = $("#selectorUbicacion").val();  // Lectura de Values en Selects Ubicacion
+    metodo = $("#selectorMetodoDePago").val();  // Lectura de Values en Selects Metodo
+    monto = $("#inputMonto").val();
     mostrarUsuarios()
 });
 
@@ -38,6 +46,10 @@ function mostrarUsuarios() {
                 .filter(function (usuario) {
                     return usuario.metodo === metodo || metodo === "Todos";
                 })                                                                   //Filter para el Metodo seleccionado o Todos
+
+                .filter(function (usuario) {
+                    return usuario.monto >= monto ;
+                })                                                                   //Filter para el Monto
 
             console.table(usuarios)                                                  // Lectura en Consola
 
