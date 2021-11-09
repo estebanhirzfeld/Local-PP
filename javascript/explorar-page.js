@@ -31,6 +31,7 @@ function FilterListener(){
         mostrarUsuarios()
     });
 }
+
 // creacion de acuerdo a los parametros del filtro
 function mostrarUsuarios() {
     $.getJSON(URLJSON, function (respuesta, estado) {
