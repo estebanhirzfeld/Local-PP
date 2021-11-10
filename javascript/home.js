@@ -54,14 +54,14 @@ function BotonSwap(){
             console.log("toggle = false");
             $("#customPlaceholderARS").text("Ud. Recibe USD");
             $("#customPlaceholderUSD").text("Ud. Envia ARS");
-            ActualizacionDeValores()
+            LecturaDeValores()
             DolarToPesos() 
             
         } else {
             console.log("toggle = true");
             $("#customPlaceholderARS").text("Ud. Envia ARS");
             $("#customPlaceholderUSD").text("Ud. Recibe USD");
-            ActualizacionDeValores()
+            LecturaDeValores()
             PesosToDolar()
 
         }
