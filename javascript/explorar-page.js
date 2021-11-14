@@ -71,7 +71,7 @@ function mostrarUsuarios() {
                                 <th rowspan="3">${usuario.nombre}</th>
                                 <th rowspan="3">Método</th>
                                 <th rowspan="3">Argentina</th>
-                                <th rowspan="2">ARS${usuario.monto}</th>
+                                <th rowspan="2">ARS ${usuario.monto}</th>
                             </tr>
                             <tr>
                             </tr>
@@ -106,7 +106,7 @@ function mostrarUsuarios() {
                                 <th rowspan="3">${usuario.nombre}</th>
                                 <th rowspan="3">Método</th>
                                 <th rowspan="3">Argentina</th>
-                                <th rowspan="2">ARS${usuario.monto}</th>
+                                <th rowspan="2">ARS ${usuario.monto}</th>
                             </tr>
                             <tr>
                             </tr>
@@ -140,6 +140,9 @@ function mostrarUsuarios() {
 
 // creacion de contenido inicial
 function ContenidoInicial(){
+
+
+
     $.getJSON(URLJSON, function (respuesta, estado) {
         if (estado == "success") {
             let misUsuarios = respuesta;
@@ -156,7 +159,7 @@ function ContenidoInicial(){
                                 <th rowspan="3">${usuario.nombre}</th>
                                 <th rowspan="3">Método</th>
                                 <th rowspan="3">Argentina</th>
-                                <th rowspan="2">ARS${usuario.monto}</th>
+                                <th rowspan="2">ARS ${usuario.monto}</th>
                             </tr>
                             <tr>
                             </tr>
@@ -190,7 +193,7 @@ function ContenidoInicial(){
                                 <th rowspan="3">${usuario.nombre}</th>
                                 <th rowspan="3">Método</th>
                                 <th rowspan="3">Argentina</th>
-                                <th rowspan="2">ARS${usuario.monto}</th>
+                                <th rowspan="2">ARS ${usuario.monto}</th>
                             </tr>
                             <tr>
                             </tr>
