@@ -2,15 +2,21 @@
 let inputPesos;
 let inputDolares;
 
+let metodo;
+
 let toggle = true;
 
 
 PesosToDolar();
 BotonSwap();
+BuscarOfertas();
+
+
 
 function LecturaDeValores() {
     inputPesos = $("#inputPesos").val();
     inputDolares = $("#inputDolares").val();
+    metodo = $("#selectorSuperior").val();
 }
 
 function PesosToDolar() {
@@ -66,5 +72,17 @@ function BotonSwap(){
 
         }
 
+    })
+}
+
+function BuscarOfertas(){
+    $(".cajaSelectora__botonBuscarOfertas").click(function(){
+        LecturaDeValores()
+        if(toggle == true){
+            console.log("Desea Comprar $" + inputDolares + " Dolares y paga en Pesos con " + metodo);
+        }else if(toggle == false){
+            console.log("Desea Comprar $" + inputPesos + " Dolares y paga en Pesos con " + metodo);
+        }
+        
     })
 }

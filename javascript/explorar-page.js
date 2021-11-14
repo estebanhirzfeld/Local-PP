@@ -141,7 +141,7 @@ function mostrarUsuarios() {
 // creacion de contenido inicial
 function ContenidoInicial(){
 
-
+    $("#inputMonto").val(11000);
 
     $.getJSON(URLJSON, function (respuesta, estado) {
         if (estado == "success") {
