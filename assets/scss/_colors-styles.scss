@@ -185,6 +185,15 @@ input:hover, select:hover{
     background-color: rgba(35, 17, 35, 0.401);
 }
 
+.div__input--style{
+    text-align:center;
+    outline:none;
+    border: none;
+    border-radius:15px;
+    width: 80%;
+    height:40px;
+}
+
 .div__selector--style{
     
     & select{

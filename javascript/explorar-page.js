@@ -44,7 +44,7 @@ function mostrarUsuarios() {
                 misUsuarios.push(nuevasOfertas);
             }
 
-            var usuarios = misUsuarios
+            let usuarios = misUsuarios
                 .filter(function (usuario) {
                     return usuario.localidad === ubicacion || ubicacion === "Todos";
                 })                                                                   //Filter para la Ubicacion seleccionada o Todos
